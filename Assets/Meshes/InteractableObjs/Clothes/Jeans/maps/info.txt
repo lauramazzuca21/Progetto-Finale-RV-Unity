@@ -1,0 +1,32 @@
+=====MAIN=====
+- Name: Jeans for Eva v3.0 or another character.
+- Price: FREE
+- Version: 3ds max 9.0 or higher
+
+===KEYWORDS===
+dress jeans cloth textile fabric woman women girl female people human character realistic eva
+
+=====INFO=====
+It's a dress for any female model.
+- *.BMP (bitmap) uncompressed, high quality texture - 12mb.
+- 2048x2048 texture.
+- Clean edge-loops based topology.
+- max 9.0 or higher compatible.
+- System Unit: cm
+
+jeans				- 1004 polygons, 1061 vertices
+
+=====files=====
+- jeans.max			- 3ds max 9.0 file, with light/render/GI/ setup for mental ray 3.3
+- maps.rar			- map/texture/info
+
+=====maps=====
+- jeans.bmp			- Cloth	2048x2048
+
+=====Tips and Tricks=====
+- Load and use with female character (for example Eva v3.0): Open the character file. Select "File -> Merge..." and browse the jeans.max file. Select "jeans" object. If you load it to Eva, the dress will fit perfectly, otherwise, you need to adjust the mesh according to your character's size and position.
+- Extract the jeans.bmp file from maps.rar archive in the same directory with your project files.
+- Resize in sub-object mode.
+- Can be used Skin Wrap or Physique modifiers to attach bone system or biped.
+
+=====Copyright (C) Nikola Dechev 2010=====
