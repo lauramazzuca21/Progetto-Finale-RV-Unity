@@ -15,6 +15,9 @@ public class NPCContinuousQuestManager : QuestManager
     private int _countInstances = 0;
     private void Start()
     {
+        EventManager.CorrectRecycling += HandleCorrectRecycle;
+        EventManager.WrongRecycling += HandleWrongRecycle;
+
         _countInstances = _maxObjects;
     }
 

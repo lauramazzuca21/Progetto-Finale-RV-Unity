@@ -6,10 +6,6 @@ using UnityEngine;
 public class ObjectsQuestManager : QuestManager
 {
 
-    void Start()
-    {
-    }
-
     protected override void HandleCorrectRecycle(Enums.TrashType trashType, Enums.ObjectType objectType)
     {
         EventManager.FirePointsEvent(CorrectPoints);

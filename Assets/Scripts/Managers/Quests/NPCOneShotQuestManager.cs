@@ -7,18 +7,27 @@ public class NPCOneShotQuestManager : QuestManager
 {
     [SerializeField]
     private Enums.OneShotQuestNPCs _npc;
+
+    //"Select an object in the Quest Objects list and its respective quantity in Quest Quantities.They will be matched by position.";
+    [SerializeField]
+    private List<Enums.ObjectType> _questObjects = new List<Enums.ObjectType>();
+    [SerializeField]
+    private List<int> _questQuantities = new List<int>();
+
     private bool _isActive = true;
     private ObjectsQuest _quest;
     
     void Start()
     {
-        _quest = QuestFactory.GetQuest(_npc);
+        if (_questQuantities.Count != _questObjects.Count)
+        {
+            UnityEngine.Debug.LogError("The quest objects count does not match the quest quantities count!");
+            return;
+        }
 
+        _quest = new ObjectsQuest(_questObjects, _questQuantities);
         EventManager.CorrectRecycling += HandleCorrectRecycle;
         EventManager.WrongRecycling += HandleWrongRecycle;
-
-        CorrectPoints = 10;
-        WrongPoints = -10;
     }
 
     protected override void HandleCorrectRecycle(Enums.TrashType trashType, Enums.ObjectType objectType)

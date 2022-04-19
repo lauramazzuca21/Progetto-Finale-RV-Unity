@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +8,18 @@ using System.Threading.Tasks;
 //Class that represents a single quest of the player's kind
 public class ObjectsQuest : Dictionary<Enums.ObjectType, int>
 {
+    public ObjectsQuest(Dictionary<Enums.ObjectType, int> settings)
+    {
+        foreach (KeyValuePair< Enums.ObjectType, int> p in settings)
+        {
+            this.Add(p.Key, p.Value);
+        }
+    }
+
+    public ObjectsQuest(List<ObjectType> questObjects, List<int> questQuantities)
+    {
+    }
+
     public bool UpdateQuest(Enums.ObjectType obj)
     {
         int value;

@@ -63,29 +63,4 @@ public static class Constants
             {Enums.AudioClips.CORRECT, "correctAction" },
             {Enums.AudioClips.WRONG, "wrongAction" }
         };
-
-    public static ObjectsQuest CosplayerObjQuest = new ObjectsQuest
-    {
-        {Enums.ObjectType.NEWSPAPER, 2 },
-        {Enums.ObjectType.BOOK, 1 },
-        {Enums.ObjectType.BOX, 1 }
-    };
-
-    public static ObjectsQuest ArtesanObjQuest = new ObjectsQuest
-    {
-        {Enums.ObjectType.BAG, 2 }
-    };
-
-    public static ObjectsQuest DoctorObjQuest = new ObjectsQuest
-    {
-        {Enums.ObjectType.CAN, 3 },
-        {Enums.ObjectType.CASE, 2 }
-    };
-
-    public static ObjectsQuest EcoIslanderObjQuest = new ObjectsQuest
-    {
-        {Enums.ObjectType.GLASS, 2 },
-        {Enums.ObjectType.BOTTLE, 2 }
-    };
-
 }
