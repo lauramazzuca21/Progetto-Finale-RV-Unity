@@ -1,7 +1,4 @@
-Assets/Da[[:space:]]sistemare/Bidoni/Dumpster2/uploads_files_2590802_Dumpster-4K.zip filter=lfs diff=lfs merge=lfs -text
-Assets/Da[[:space:]]sistemare/Oggetti[[:space:]]da[[:space:]]riciclare/Spoiled[[:space:]]Sponge/uploads_files_2877645_PBR_TEXTURES.rar filter=lfs diff=lfs merge=lfs -text
 Assets/StylizedTown/Textures/Cobblestone_normal.png filter=lfs diff=lfs merge=lfs -text
-Assets/Da[[:space:]]sistemare/* filter=lfs diff=lfs merge=lfs -text
 Assets/Meshes/InteractableObjs/Electronics/panasonic-tr-545c-rad-ed/textures/GAP_2DAE01_Adriaens_Naomi_N_01.png filter=lfs diff=lfs merge=lfs -text
 Assets/Animations/NPCs/Ch31_nonPBR@Waving.fbx filter=lfs diff=lfs merge=lfs -text
 Assets/Animations/NPCs/worker.fbx filter=lfs diff=lfs merge=lfs -text
