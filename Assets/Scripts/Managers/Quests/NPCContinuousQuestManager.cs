@@ -10,7 +10,7 @@ public class NPCContinuousQuestManager : QuestManager
     [SerializeField]
     private List<Enums.ObjectType> _objectTypes = new List<Enums.ObjectType>();
     [SerializeField]
-    private const int _maxObjects = 0;
+    private int _maxObjects = 0;
 
     private int _countInstances = 0;
     private void Start()
