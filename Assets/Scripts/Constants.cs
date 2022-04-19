@@ -40,6 +40,22 @@ namespace Enums
         CORRECT,
         WRONG
     }
+
+    public enum ContinuousQuestNPCs
+    {
+        MILKMAN,
+        LIBRARIAN,
+        GARDENER,
+        BARMAN
+    }
+
+    public enum OneShotQuestNPCs
+    {
+        COSPLAYER,
+        ARTESAN,
+        DOCTOR,
+        ECOISLANDER
+    }
 }
 public static class Constants
 {
@@ -48,25 +64,25 @@ public static class Constants
             {Enums.AudioClips.WRONG, "wrongAction" }
         };
 
-    public static ObjectsQuest PaperObjQuest = new ObjectsQuest
+    public static ObjectsQuest CosplayerObjQuest = new ObjectsQuest
     {
         {Enums.ObjectType.NEWSPAPER, 2 },
         {Enums.ObjectType.BOOK, 1 },
         {Enums.ObjectType.BOX, 1 }
     };
 
-    public static ObjectsQuest PlasticObjQuest = new ObjectsQuest
+    public static ObjectsQuest ArtesanObjQuest = new ObjectsQuest
     {
         {Enums.ObjectType.BAG, 2 }
     };
 
-    public static ObjectsQuest TinObjQuest = new ObjectsQuest
+    public static ObjectsQuest DoctorObjQuest = new ObjectsQuest
     {
         {Enums.ObjectType.CAN, 3 },
         {Enums.ObjectType.CASE, 2 }
     };
 
-    public static ObjectsQuest GlassObjQuest = new ObjectsQuest
+    public static ObjectsQuest EcoIslanderObjQuest = new ObjectsQuest
     {
         {Enums.ObjectType.GLASS, 2 },
         {Enums.ObjectType.BOTTLE, 2 }
