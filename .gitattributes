@@ -9,4 +9,3 @@ Assets/Animations/NPCs/librarian.fbx filter=lfs diff=lfs merge=lfs -text
 Assets/Meshes/InteractableObjs/Set/LowPolyOfficeProps_LITE/LowPolyOfficeProps_LiteScene/LightingData.asset filter=lfs diff=lfs merge=lfs -text
 Assets/Meshes/InteractableObjs/Paper/PaperBox1/Warehouse_Pack_HD/Common/Textures/Cardboard_boxes_1_1_Normal.png filter=lfs diff=lfs merge=lfs -text
 Assets/Animations/NPCs/Ch22_nonPBR@Waving.fbx filter=lfs diff=lfs merge=lfs -text
-Assets/Meshes/InteractableObjs/Paper/Paper[[:space:]]Cup/paper_cup_fbx.FBX filter=lfs diff=lfs merge=lfs -text
