@@ -1,0 +1,142 @@
+FONTI
+https://www.valconca.info/natura_amica/alberoriciclo/riciclo.html#3
+
+VETRO
+	BOTTIGLIA
+	VETRO ROTTO
+	BICCHIERI
+
+PLASTICA
+	BOTTIGLIA 
+	LATTA
+	LATTE reward
+	CARTA STAGNOLA
+	LATTINE
+	PLASTIC BAG
+
+CARTA
+	SCATOLA
+	GIORNALE
+	VECCHIO SPARTITO
+	BICCHIERI
+	AEREOPLANI 
+
+ORGANICO
+	CASSETTA LEGNO
+	SCARTI
+	CAVOLFIORE
+	PIZZA
+	UOVA
+	ZUCCA
+
+INDIFF (non recicl)
+	TAZZA
+	RASOIO
+	PANNOLINI
+	SILICONE
+	SPUGNA
+
+VESTITI
+	SCARPA
+	PANTALONI
+	MAGLIETTA
+
+ELETTRONICA
+	PC
+	OLD TV
+	OLD PC
+	OLD REGIDTRATORE
+
+SPECIALI
+	BOMBOLA
+	PNEUMATICI
+	BATTERIE
+	MEDICINALI
+	SEDIA
+		
+
+
+QUEST PLAYER - riconpensa: PUNTI
+
+	PAPER: ricicla 5 PAPER
+	PAPER: raccogli 1 libro
+	PAPER: ricicla 2 giornali
+	PAPER: ricicla 1 scatola di cartone
+
+	PLASTIC: ricicla 5 PLASTIC
+	PLASTIC: ricicla 2 buste di plastica
+
+	ORGANIC: ricicla 5 ORGANIC
+	ORGANIC:
+
+	GLASS: ricicla 5 GLASS
+	GLASS: ricicla 2 bottiglie di vetro
+	GLASS: ricicla 2 bicchieri
+
+	TIN: ricicla 5 TIN
+	TIN: ricicla 3 lattine
+	TIN: ricicla 2 scatolette
+           
+	NONRECYCLABLE: ricicla 5 NONRECYCLABLE 
+	NONRECYCLABLE: raccogli 3 medicinali
+	NONRECYCLABLE: ricicla 2 pile
+	NONRECYCLABLE: ricicla 1 pneumatico
+	
+	RICOMPENSA FINALE - MAGO DEL RICICLO: https://sketchfab.com/3d-models/recyclebot-d4bb9d9b8fdf4f24993d7544cad67193
+
+
+QUEST PNG - riconpensa: OGGETTI/PUNTI
+
+
+NONRECYCLABLE - DOTTORE
+oggetto da portare: 
+	- 2 medicinali
+
+NONRECYCLABLE - OMINO
+oggetto da portare: 
+	- 1 pile
+	ricompensa UOMO PILA: https://sketchfab.com/3d-models/recyclotron-dancing-the-robot-dance-bdd0dd4ffcb6470792725adc8db4774e
+
+
+
+GLASS FALEGNAME (classidra)
+	- 3 vetri
+	- 2 legno
+	ricompensa: https://assetstore.unity.com/packages/3d/props/interior/sand-clock-8466
+
+PLASTIC
+	- 1 busta plastica
+	- 1 organic
+	- 1 pila
+	ricmpensa UOMO DI PLASTICA: https://sketchfab.com/3d-models/recycling-protectron-41efc935791540cb9247bcb7c71f0109
+
+
+QUEST CONTINUE - riconpensa: OGGETTI/PUNTI
+
+PAPEL - LIBRAIO (x1) : ogni libro portato da una ricompensa
+oggetto da portare: 
+
+	ricompensa: 
+		https://assetstore.unity.com/packages/3d/props/origami-paper-crane-16630
+		https://assetstore.unity.com/packages/3d/lowpoly-paper-boat-61369
+
+ORGANICO - CONTADINO (x1) : ogni rifiuto organico portato da una ricompensa
+	ricompensa: 
+	ricompensa: 
+	ricompensa: https://sketchfab.com/3d-models/sunflower-569a71ccf4d94c1585c9573521fb998f
+	ricompensa: https://sketchfab.com/3d-models/colored-flower-6b3020fed29c4976bc44ed1b7cb7e960
+	ricompensa: https://sketchfab.com/3d-models/flower-0fa50cf622f44f2ba59eff6c11cb8fbd
+	ricompensa: https://sketchfab.com/3d-models/flowers-e9e8b1ca9d3640f8be00b760e1fad170
+	ricompensa: https://sketchfab.com/3d-models/crystal-flowers-2d8bcf463c9d4128bdc1a7abc7096d4d
+	ricompensa: https://sketchfab.com/3d-models/pink-flowers-d540ef396c0e456eb17bbba334a5e81a
+
+TIN - BARISTA (x5): ogni 5 oggetti di latta
+	ricompensa: https://sketchfab.com/3d-models/old-italian-coffee-maker-8940c8884dc14e4c85164f582db9aff4
+	ricompensa: https://sketchfab.com/3d-models/coffee-maker-692688da914f4a4dbd54ce7969a3bae0
+
+	ricompensa UOMO LATTA: https://sketchfab.com/3d-models/gol-d-bot-0531d65afd364d2fa7abebd69ef39b54
+
+MILKMAN (x5): ogni 5 oggetti di vetro
+vetro
+
+
