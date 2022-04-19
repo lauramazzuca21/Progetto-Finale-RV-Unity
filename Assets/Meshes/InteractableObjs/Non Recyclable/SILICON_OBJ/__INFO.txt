@@ -1,0 +1,25 @@
+
+ACETIC SILICON SEALANT BOTTLE
+=============================
+
+MODELLED, BASIC COLOUR - WINGS3D
+
+exported to 2 different format:
+"""""""""""""""""""""""""""""""
+
+.3DS	(exported using Wings3D)
+.OBJ	(exported using Wings3D)
+
+
+detail as shown in wings3d before exported:
+"""""""""""""""""""""""""""""""""""""""""""
+
+POLYGON = 1042
+EDGES = 2112
+VERTICES = 1072
+
+
+Thank You for downloading ;)
+-------------
+->SnapHill ;)
+
