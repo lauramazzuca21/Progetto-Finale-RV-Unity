@@ -4,26 +4,21 @@ using UnityEngine;
 
 public class TriggerAnimation : MonoBehaviour
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    /// 
-
-    //ref to animator
-    [SerializeField] GameObject parentAnimator;
+    [SerializeField] 
     private Animator myAnimator;
 
     // Start is called before the first frame update
     void Start()
     {
-        myAnimator = parentAnimator.GetComponent<Animator>();
+        if (!myAnimator)
+        myAnimator = this.gameObject.GetComponent<Animator>();
     }
    
     private void OnTriggerEnter(Collider other)
     {       
         if (other.CompareTag("Player"))
         {
-            myAnimator.SetBool("Open", true);            
+            myAnimator.SetBool("Active", true);            
         }
     }
 
@@ -31,7 +26,7 @@ public class TriggerAnimation : MonoBehaviour
     {        
         if (other.CompareTag("Player"))
         {
-            myAnimator.SetBool("Open", false);   
+            myAnimator.SetBool("Active", false);   
         }
     }
 }
