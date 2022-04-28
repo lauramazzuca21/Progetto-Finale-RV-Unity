@@ -16,6 +16,7 @@ namespace Valve.VR.InteractionSystem
 		public float speed = 4.0f;
 		public float shiftSpeed = 16.0f;
 		public bool showInstructions = true;
+		public GameObject player;
 
 		private Vector3 startEulerAngles;
 		private Vector3 startMousePosition;
@@ -73,20 +74,21 @@ namespace Valve.VR.InteractionSystem
 
 			Vector3 delta = new Vector3( right, up, forward ) * currentSpeed * deltaRealTime;
 
-			transform.position += transform.TransformDirection( delta );
+			//transform.position += transform.TransformDirection( delta );
+			player.transform.position += player.transform.TransformDirection(delta);
 
 			Vector3 mousePosition = Input.mousePosition;
 
 			if ( Input.GetMouseButtonDown( 1 ) /* right mouse */)
 			{
 				startMousePosition = mousePosition;
-				startEulerAngles = transform.localEulerAngles;
+				startEulerAngles = player.transform.localEulerAngles; //transform.localEulerAngles;
 			}
 
 			if ( Input.GetMouseButton( 1 ) /* right mouse */)
 			{
 				Vector3 offset = mousePosition - startMousePosition;
-				transform.localEulerAngles = startEulerAngles + new Vector3( -offset.y * 360.0f / Screen.height, offset.x * 360.0f / Screen.width, 0.0f );
+				player.transform.localEulerAngles/*transform.localEulerAngles*/ = startEulerAngles + new Vector3( -offset.y * 360.0f / Screen.height, offset.x * 360.0f / Screen.width, 0.0f );
 			}
 		}
 
