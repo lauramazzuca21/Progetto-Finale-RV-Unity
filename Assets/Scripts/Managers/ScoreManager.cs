@@ -21,8 +21,12 @@ public class ScoreManager : MonoBehaviour
         UpdateScoreLabel();
     }
 
-    private void UpdateScoreLabel()
+    private IEnumerator UpdateScoreLabel()
     {
-        scoreLabel.text = points.ToString();
+        scoreLabel.text = "Current score: " + points.ToString();
+
+        yield return new WaitForSeconds(2);
+        scoreLabel.text = "";
     }
+
 }

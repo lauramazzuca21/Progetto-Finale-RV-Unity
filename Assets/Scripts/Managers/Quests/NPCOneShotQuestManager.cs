@@ -33,7 +33,7 @@ public class NPCOneShotQuestManager : QuestManager
 
     protected void HandlePlayerInteraction(GameObject gameObject)
     {
-        if (gameObject != this.gameObject)
+        if (gameObject != this.gameObject || !_isActive)
             return;
 
         Inventory inv = FindObjectOfType<Inventory>();
@@ -41,35 +41,20 @@ public class NPCOneShotQuestManager : QuestManager
 
         foreach (RecyclableObject.ObjID k in keys)
         {
-            if (_quest.TryGetValue(k.objectType, out int value))
+            if (inv.GetInventory.TryGetValue(k, out int value))
             {
                 int used = _quest.UpdateQuest(k.objectType, value);
-                inv.UpdateInventory(k, used);
+                inv.UpdateInventory(k, used);                  
             }
         }
 
         UpdateScore();
-    }
 
-    protected override void HandleCorrectRecycle(Enums.TrashType trashType, Enums.ObjectType objectType)
-    {
-        if (!_isActive)
-            return;
-
-        UnityEngine.Debug.Log("handling correct recycle");
-        _quest.UpdateQuest(objectType);
         if (_quest.IsQuestComplete())
         {
             _isActive = false;
-            //TODO: add what happens when quest is completed
-        }
-        else
             EventManager.FirePointsEvent(CorrectPoints);
-    }
-
-    protected override void HandleWrongRecycle()
-    {
-       
+        }
     }
 
     private void UpdateScore()
@@ -78,12 +63,10 @@ public class NPCOneShotQuestManager : QuestManager
 
         for (int i = 0; i < _questObjects.Count; i++)
         {
-            if (!_quest.TryGetValue(_questObjects[i], out int count))
-                count = 0;
-            else
-                count = _questQuantities[i] - count;
+            _quest.TryGetValue(_questObjects[i], out int count);
+            count = _questQuantities[i] - count;
 
-            str = _questObjects[i] + ":\t\t"+ count +"/" + _questQuantities[i] + "\n";
+            str += _questObjects[i] + ":\t\t"+ count +"/" + _questQuantities[i] + "\n";
         }
         _score.text = str;
     }

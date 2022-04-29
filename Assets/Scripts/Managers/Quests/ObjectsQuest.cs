@@ -21,6 +21,8 @@ public class ObjectsQuest : Dictionary<Enums.ObjectType, int>
         for (int i = 0; i < questObjects.Count; i++)
         {
             this.Add(questObjects[i], questQuantities[i]);
+            UnityEngine.Debug.Log("Added quest objective " + questObjects[i] + ": " + questQuantities[i]);
+
         }
     }
 
@@ -42,7 +44,6 @@ public class ObjectsQuest : Dictionary<Enums.ObjectType, int>
         foreach (KeyValuePair<Enums.ObjectType, int> p in this)
             result += p.Value;
 
-        UnityEngine.Debug.Log("quest Completed!");
-        return result == 0;
+        return result == 0; 
     }
 }

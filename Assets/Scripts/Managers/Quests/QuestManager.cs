@@ -14,7 +14,4 @@ public abstract class QuestManager : MonoBehaviour
 
     protected int CorrectPoints { get { return _correctPoints; } set { _correctPoints = value; } }
     protected int WrongPoints { get { return _wrongPoints; } set { _wrongPoints = value; } }
-
-    protected abstract void HandleCorrectRecycle(Enums.TrashType trashType, Enums.ObjectType objectType);
-    protected abstract void HandleWrongRecycle();
 }

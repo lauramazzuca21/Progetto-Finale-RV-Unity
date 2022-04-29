@@ -28,7 +28,7 @@ public class TrashQuestManager : QuestManager
         EventManager.WrongRecycling += HandleWrongRecycle;
     }
 
-    protected override void HandleCorrectRecycle(Enums.TrashType trashType, Enums.ObjectType objectType)
+    protected void HandleCorrectRecycle(Enums.TrashType trashType, Enums.ObjectType objectType)
     {
         if (_genericQuests.TryGetValue(trashType, out int count))
         {
@@ -55,7 +55,7 @@ public class TrashQuestManager : QuestManager
 
     }
 
-    protected override void HandleWrongRecycle()
+    protected void HandleWrongRecycle()
     {
         EventManager.FirePointsEvent(WrongPoints);
     }
