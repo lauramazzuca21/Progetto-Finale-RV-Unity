@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,7 @@ public class Inventory : MonoBehaviour
 
     private Dictionary<RecyclableObject.ObjID, int> _inventory = new Dictionary<RecyclableObject.ObjID, int>();
 
+    public Dictionary<RecyclableObject.ObjID, int> GetInventory { get { return _inventory; } }
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +42,8 @@ public class Inventory : MonoBehaviour
     private void IncreaseInventory(Hand hand)
     {
         //If yes, detach and eliminate object and increase inventory of that objects
-        RecyclableObject current = hand.currentAttachedObject.GetComponent<RecyclableObject>();
+        GameObject currentObj = hand.currentAttachedObject;
+        RecyclableObject current = currentObj.GetComponent<RecyclableObject>();
         if (_inventory.TryGetValue(current.ID, out int count))
         {
             _inventory[current.ID] = count + 1;
@@ -49,30 +52,19 @@ public class Inventory : MonoBehaviour
         {
             _inventory.Add(current.ID, 1);
         }
-        hand.DetachObject(hand.currentAttachedObject);
-        Destroy(hand.currentAttachedObject);
+        hand.DetachObject(currentObj);
+        Destroy(currentObj);
 
         PrintLog();
     }
 
-    private void DecreaseInventory()
+    internal void UpdateInventory(RecyclableObject.ObjID key, int used)
     {
-        //if (_inventory.TryGetValue(current.ObjectType, out int count))
-        //{
-        //    _inventory[current.ObjectType] = count + 1;
-        //}
-        //else
-        //{
-        //    _inventory.Add(current.ObjectType, 1);
-        //}
+        _inventory.TryGetValue(key, out int value);
 
-        //PrintLog();
+        _inventory[key] = value - used;
+        PrintLog();
     }
-
-    //public bool CheckInventory()
-    //{
-
-    //}
 
     private bool WasButtonPressed(Hand hand)
     {
@@ -90,7 +82,7 @@ public class Inventory : MonoBehaviour
     {
         foreach (KeyValuePair<RecyclableObject.ObjID, int> pair in _inventory)
         {
-            UnityEngine.Debug.Log(pair.Value + " of " + pair.Key);
-        }
+            UnityEngine.Debug.Log(pair.Value + " of " + pair.Key.trashType + " " + pair.Key.objectType);
+        } 
     }
 }

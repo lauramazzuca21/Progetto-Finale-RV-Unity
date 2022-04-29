@@ -31,9 +31,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8546446084518972715}
-  m_LocalRotation: {x: -0, y: -0.66371346, z: -0, w: -0.747987}
+  m_LocalRotation: {x: -0, y: -0.66371095, z: 0, w: -0.74798924}
   m_LocalPosition: {x: -12.388175, y: 0.22894612, z: -0.87598336}
-  m_LocalScale: {x: 0.21121144, y: 0.21121144, z: 0.21121144}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -57,6 +58,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -89,7 +91,7 @@ MeshRenderer:
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!95 &8633269275666991903
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102,6 +104,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -253,5 +256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e628485547f50b4e82fd6c8a516da8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trashType: 8
-  _objectType: 1
+  _id:
+    trashType: 8
+    objectType: 1

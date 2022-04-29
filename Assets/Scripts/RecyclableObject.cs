@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-class RecyclableObject : MonoBehaviour
+public class RecyclableObject : MonoBehaviour
 {
     [System.Serializable]
     public struct ObjID

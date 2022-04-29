@@ -510,6 +510,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7990669818539997118}
     m_Modifications:
+    - target: {fileID: 1481742595067597965, guid: a74292f742321a24a9dd82ec7e0cc0bc, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2572080582706626500, guid: a74292f742321a24a9dd82ec7e0cc0bc, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -525,6 +529,10 @@ PrefabInstance:
     - target: {fileID: 4079967819233181935, guid: a74292f742321a24a9dd82ec7e0cc0bc, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419125176038425356, guid: a74292f742321a24a9dd82ec7e0cc0bc, type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5468266631882261350, guid: a74292f742321a24a9dd82ec7e0cc0bc, type: 3}
       propertyPath: m_RootOrder
@@ -4546,8 +4554,8 @@ MonoBehaviour:
   _wrongPoints: 0
   _score: {fileID: 1481742595869265784}
   _npc: 2
-  _questObjects: 
-  _questQuantities: 
+  _questObjects: 01000000
+  _questQuantities: 05000000
 --- !u!4 &7990669818539997118 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 337702e8d13381245b9c8f3cd8690ddf, type: 3}

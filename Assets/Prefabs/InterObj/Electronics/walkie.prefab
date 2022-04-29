@@ -31,13 +31,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421401182995147875}
-  m_LocalRotation: {x: -0, y: -0.9774467, z: -0, w: 0.21118233}
+  m_LocalRotation: {x: 0, y: -0.9774473, z: 0, w: 0.21117976}
   m_LocalPosition: {x: -12.332819, y: 0.25460878, z: -0.8599149}
   m_LocalScale: {x: 0.2, y: 0.20000002, z: 0.20000002}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -155.617, z: 0}
 --- !u!33 &1425880382617651403
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -57,6 +58,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -91,7 +93,7 @@ MeshRenderer:
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!95 &1363278291165167591
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104,6 +106,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -149,8 +152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e628485547f50b4e82fd6c8a516da8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trashType: 6
-  _objectType: 16
+  _id:
+    trashType: 6
+    objectType: 17
 --- !u!114 &7655064974683279981
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -36,7 +36,19 @@ public class NPCOneShotQuestManager : QuestManager
         if (gameObject != this.gameObject)
             return;
 
+        Inventory inv = FindObjectOfType<Inventory>();
+        List<RecyclableObject.ObjID> keys = new List<RecyclableObject.ObjID>(inv.GetInventory.Keys);
 
+        foreach (RecyclableObject.ObjID k in keys)
+        {
+            if (_quest.TryGetValue(k.objectType, out int value))
+            {
+                int used = _quest.UpdateQuest(k.objectType, value);
+                inv.UpdateInventory(k, used);
+            }
+        }
+
+        UpdateScore();
     }
 
     protected override void HandleCorrectRecycle(Enums.TrashType trashType, Enums.ObjectType objectType)
@@ -68,6 +80,8 @@ public class NPCOneShotQuestManager : QuestManager
         {
             if (!_quest.TryGetValue(_questObjects[i], out int count))
                 count = 0;
+            else
+                count = _questQuantities[i] - count;
 
             str = _questObjects[i] + ":\t\t"+ count +"/" + _questQuantities[i] + "\n";
         }
