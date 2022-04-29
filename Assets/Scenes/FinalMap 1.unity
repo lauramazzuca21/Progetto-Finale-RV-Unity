@@ -33744,7 +33744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 58
+      value: 29.1
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -33752,7 +33752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.2
+      value: 11.6
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -35899,7 +35899,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 333, y: -146}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1517117047
@@ -36625,26 +36625,6 @@ PrefabInstance:
     - target: {fileID: 7597069682931829781, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7597069683891269823, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
-      propertyPath: _questObjects.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7597069683891269823, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
-      propertyPath: _questObjects.Array.data[0]
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 7597069683891269823, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
-      propertyPath: _questQuantities.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7597069683891269823, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
-      propertyPath: _questQuantities.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7597069684076154974, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
-      propertyPath: _correctPoints
-      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}

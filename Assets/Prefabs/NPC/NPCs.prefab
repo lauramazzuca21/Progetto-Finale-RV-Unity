@@ -1147,7 +1147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd25fea9790ec3a4eb01d128de2aea79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctPoints: 0
+  _correctPoints: 500
   _wrongPoints: 0
   _score: {fileID: 4223362430273351872}
   _npc: 1
@@ -1973,8 +1973,8 @@ MonoBehaviour:
   _wrongPoints: 0
   _score: {fileID: 1481742596437578227}
   _trashType: 0
-  _objectTypes: 03000000
-  _maxObjects: 0
+  _objectTypes: 04000000
+  _maxObjects: 6
 --- !u!4 &7990669819801864661 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 710782716a716b7429c6c8829b3903f1, type: 3}
@@ -3282,12 +3282,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd25fea9790ec3a4eb01d128de2aea79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctPoints: 0
+  _correctPoints: 750
   _wrongPoints: 0
   _score: {fileID: 1481742596075280004}
   _npc: 0
-  _questObjects: 
-  _questQuantities: 
+  _questObjects: 0d000000
+  _questQuantities: 04000000
 --- !u!4 &7990669818948139270 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 64c97edafdde5c44ca8f472cf4fde68f, type: 3}
@@ -4114,12 +4114,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd25fea9790ec3a4eb01d128de2aea79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctPoints: 0
+  _correctPoints: 1000
   _wrongPoints: 0
   _score: {fileID: 1481742596610618270}
   _npc: 3
-  _questObjects: 
-  _questQuantities: 
+  _questObjects: 10000000
+  _questQuantities: 01000000
 --- !u!4 &7990669818691262291 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ae49846c6af1f5f46b94c2495f6a5a77, type: 3}
@@ -4550,7 +4550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd25fea9790ec3a4eb01d128de2aea79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctPoints: 0
+  _correctPoints: 500
   _wrongPoints: 0
   _score: {fileID: 1481742595869265784}
   _npc: 2

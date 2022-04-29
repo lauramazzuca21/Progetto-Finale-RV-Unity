@@ -21,7 +21,7 @@ public class ObjectsQuest : Dictionary<Enums.ObjectType, int>
         for (int i = 0; i < questObjects.Count; i++)
         {
             this.Add(questObjects[i], questQuantities[i]);
-            UnityEngine.Debug.Log("Added quest objective " + questObjects[i] + ": " + questQuantities[i]);
+            //UnityEngine.Debug.Log("Added quest objective " + questObjects[i] + ": " + questQuantities[i]);
 
         }
     }
