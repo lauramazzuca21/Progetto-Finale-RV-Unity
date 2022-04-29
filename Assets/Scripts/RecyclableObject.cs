@@ -7,17 +7,31 @@ using UnityEngine;
 
 class RecyclableObject : MonoBehaviour
 {
-    [SerializeField]
-    private Enums.TrashType _trashType;
-    [SerializeField]
-    private Enums.ObjectType _objectType;
-
-    public Enums.TrashType TrashType { get { return _trashType; } private set { _trashType = value; } }
-    public Enums.ObjectType ObjectType { get { return _objectType; } private set { _objectType = value; } }
-
-    private void Start()
+    [System.Serializable]
+    public struct ObjID
     {
-    }
+        public Enums.TrashType trashType;
+        public Enums.ObjectType objectType;
+
+        public override int GetHashCode()
+        {
+            const uint hash = 0x9e3779b9;
+            var seed = trashType.GetHashCode() + hash;
+            seed ^= objectType.GetHashCode() + hash + (seed << 6) + (seed >> 2);
+            return (int)seed;
+        }
+        public override bool Equals(object obj)
+        {
+            return obj is ObjID other && (trashType == other.trashType && objectType == other.objectType);
+        }
+    };
+
+    [SerializeField]
+    private ObjID _id;
+
+    public Enums.TrashType TrashType { get { return _id.trashType; } set { _id.trashType = value; } }
+    public Enums.ObjectType ObjectType { get { return _id.objectType; } set { _id.objectType = value; } }
+    public ObjID ID { get { return _id; } private set { _id = value; } }
 
     private void OnTriggerEnter(Collider other)
     {

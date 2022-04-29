@@ -9,7 +9,7 @@ public class Inventory : MonoBehaviour
     private SteamVR_Action_Boolean _putInInventoryAction = SteamVR_Input.GetAction<Valve.VR.SteamVR_Action_Boolean>("PutInInventory");
     private Player _player = null;
 
-    private Dictionary<Enums.ObjectType, int> _inventory = new Dictionary<Enums.ObjectType, int>();
+    private Dictionary<RecyclableObject.ObjID, int> _inventory = new Dictionary<RecyclableObject.ObjID, int>();
 
     // Start is called before the first frame update
     void Start()
@@ -41,19 +41,38 @@ public class Inventory : MonoBehaviour
     {
         //If yes, detach and eliminate object and increase inventory of that objects
         RecyclableObject current = hand.currentAttachedObject.GetComponent<RecyclableObject>();
-        if (_inventory.TryGetValue(current.ObjectType, out int count))
+        if (_inventory.TryGetValue(current.ID, out int count))
         {
-            _inventory[current.ObjectType] = count + 1;
+            _inventory[current.ID] = count + 1;
         }
         else
         {
-            _inventory.Add(current.ObjectType, 1);
+            _inventory.Add(current.ID, 1);
         }
         hand.DetachObject(hand.currentAttachedObject);
         Destroy(hand.currentAttachedObject);
 
         PrintLog();
     }
+
+    private void DecreaseInventory()
+    {
+        //if (_inventory.TryGetValue(current.ObjectType, out int count))
+        //{
+        //    _inventory[current.ObjectType] = count + 1;
+        //}
+        //else
+        //{
+        //    _inventory.Add(current.ObjectType, 1);
+        //}
+
+        //PrintLog();
+    }
+
+    //public bool CheckInventory()
+    //{
+
+    //}
 
     private bool WasButtonPressed(Hand hand)
     {
@@ -69,7 +88,7 @@ public class Inventory : MonoBehaviour
 
     private void PrintLog()
     {
-        foreach (KeyValuePair< Enums.ObjectType, int> pair in _inventory)
+        foreach (KeyValuePair<RecyclableObject.ObjID, int> pair in _inventory)
         {
             UnityEngine.Debug.Log(pair.Value + " of " + pair.Key);
         }

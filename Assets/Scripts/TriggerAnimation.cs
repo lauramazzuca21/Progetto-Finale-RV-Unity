@@ -9,6 +9,8 @@ public class TriggerAnimation : MonoBehaviour
     [SerializeField]
     private Transform _raycast;
 
+    private bool _previousStatus = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,12 +27,15 @@ public class TriggerAnimation : MonoBehaviour
         if (Physics.Raycast(_raycast.position, _raycast.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
         {
             _animator.SetBool("Active", true);
-            EventManager.FirePlayerInteraction(this.gameObject);
         }
         else
         {
             _animator.SetBool("Active", false);
-            EventManager.FirePlayerInteraction(this.gameObject);
         }
+
+        if(!_previousStatus && _animator.GetBool("Active"))
+            EventManager.FirePlayerInteraction(this.gameObject); //fire event only the first time the ray hits the player
+       
+        _previousStatus = _animator.GetBool("Active");
     }
 }

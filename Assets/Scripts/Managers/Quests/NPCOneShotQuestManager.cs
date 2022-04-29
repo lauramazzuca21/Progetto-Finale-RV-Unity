@@ -26,8 +26,17 @@ public class NPCOneShotQuestManager : QuestManager
         }
 
         _quest = new ObjectsQuest(_questObjects, _questQuantities);
-        EventManager.CorrectRecycling += HandleCorrectRecycle;
-        EventManager.WrongRecycling += HandleWrongRecycle;
+        EventManager.PlayerInteraction += HandlePlayerInteraction;
+
+        UpdateScore();
+    }
+
+    protected void HandlePlayerInteraction(GameObject gameObject)
+    {
+        if (gameObject != this.gameObject)
+            return;
+
+
     }
 
     protected override void HandleCorrectRecycle(Enums.TrashType trashType, Enums.ObjectType objectType)
@@ -49,5 +58,19 @@ public class NPCOneShotQuestManager : QuestManager
     protected override void HandleWrongRecycle()
     {
        
+    }
+
+    private void UpdateScore()
+    {
+        string str = "";
+
+        for (int i = 0; i < _questObjects.Count; i++)
+        {
+            if (!_quest.TryGetValue(_questObjects[i], out int count))
+                count = 0;
+
+            str = _questObjects[i] + ":\t\t"+ count +"/" + _questQuantities[i] + "\n";
+        }
+        _score.text = str;
     }
 }
