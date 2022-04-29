@@ -40,7 +40,6 @@ public class Inventory : MonoBehaviour
     private void IncreaseInventory(Hand hand)
     {
         //If yes, detach and eliminate object and increase inventory of that objects
-        hand.currentAttachedObject.SetActive(false);
         RecyclableObject current = hand.currentAttachedObject.GetComponent<RecyclableObject>();
         if (_inventory.TryGetValue(current.ObjectType, out int count))
         {
@@ -51,7 +50,7 @@ public class Inventory : MonoBehaviour
             _inventory.Add(current.ObjectType, 1);
         }
         hand.DetachObject(hand.currentAttachedObject);
-        DestroyImmediate(hand.currentAttachedObject);
+        Destroy(hand.currentAttachedObject);
 
         PrintLog();
     }

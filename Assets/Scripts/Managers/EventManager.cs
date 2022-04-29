@@ -10,6 +10,9 @@ public class EventManager : MonoBehaviour
     public delegate void ReceiveSound(string objTag);
     public static event ReceiveSound Sound;
 
+    public delegate void ReceivePlayerInteraction(GameObject gameObject);
+    public static event ReceivePlayerInteraction PlayerInteraction;
+
     public delegate void ReceiveCorrectRecycling(Enums.TrashType trashType, Enums.ObjectType objectType);
     public static event ReceiveCorrectRecycling CorrectRecycling;
 
@@ -25,6 +28,11 @@ public class EventManager : MonoBehaviour
     internal static void FireSoundEvent(string objTag)
     {
         Sound?.Invoke(objTag);
+    }
+
+    internal static void FirePlayerInteraction(GameObject gameObject)
+    {
+        PlayerInteraction?.Invoke(gameObject);
     }
 
     internal static void FireCorrectRecycling(Enums.TrashType trashType, Enums.ObjectType objectType)

@@ -26,9 +26,6 @@ public class TrashQuestManager : QuestManager
     {
         EventManager.CorrectRecycling += HandleCorrectRecycle;
         EventManager.WrongRecycling += HandleWrongRecycle;
-
-        CorrectPoints = 10;
-        WrongPoints = -10;
     }
 
     protected override void HandleCorrectRecycle(Enums.TrashType trashType, Enums.ObjectType objectType)
