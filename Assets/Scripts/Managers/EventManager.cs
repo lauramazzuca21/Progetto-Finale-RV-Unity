@@ -19,13 +19,16 @@ public class EventManager : MonoBehaviour
     public delegate void ReceiveWrongRecycling();
     public static event ReceiveWrongRecycling WrongRecycling;
 
+    public delegate void ReceiveDisplayMessage(string msg);
+    public static event ReceiveDisplayMessage DisplayMessage;
 
-    internal static void FirePointsEvent(int pts)
+
+    internal static void FirePoints(int pts)
     {
         Points?.Invoke(pts);
     }
 
-    internal static void FireSoundEvent(string objTag)
+    internal static void FireSound(string objTag)
     {
         Sound?.Invoke(objTag);
     }
@@ -43,5 +46,10 @@ public class EventManager : MonoBehaviour
     internal static void FireWrongRecycling()
     {
         WrongRecycling?.Invoke();
+    }
+
+    public static void FireDisplayMessage(string msg)
+    {
+        DisplayMessage?.Invoke(msg);
     }
 }
