@@ -38,13 +38,11 @@ public class RecyclableObject : MonoBehaviour
         TrashCan can = other.gameObject.GetComponent<TrashCan>();
         if (can != null && can.TrashType.Contains(this.TrashType))
         {
-            EventManager.FireCorrectRecycling(TrashType, ObjectType);
-            UnityEngine.Debug.Log("correct!");
+            EventManager.FireCorrectRecycling(ID);
         }
         else
         {
             EventManager.FireWrongRecycling();
-            UnityEngine.Debug.Log("wrooong!");
         }
     }
 }

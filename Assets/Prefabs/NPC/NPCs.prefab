@@ -1198,6 +1198,16 @@ MonoBehaviour:
   _correctPoints: 500
   _wrongPoints: 0
   _score: {fileID: 8108355760498072965}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 8
+        objectType: 13
+      _quantity: 1
+    - _objID:
+        trashType: 3
+        objectType: 9
+      _quantity: 3
   _npc: 1
   _reward: {fileID: 0}
 --- !u!4 &5527941446963486368 stripped
@@ -1603,9 +1613,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dcc6db49d2fe0b459ab2b248eccbfa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctPoints: 0
+  _correctPoints: 500
   _wrongPoints: 0
   _score: {fileID: 6812532615610213325}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 3
+        objectType: 9
+      _quantity: 3
   _npc: 0
 --- !u!4 &7990669820152618760 stripped
 Transform:
@@ -2014,9 +2030,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dcc6db49d2fe0b459ab2b248eccbfa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctPoints: 0
+  _correctPoints: 500
   _wrongPoints: 0
   _score: {fileID: 6812532615437663414}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 0
+        objectType: 5
+      _quantity: 5
   _npc: 0
 --- !u!4 &7990669819801864661 stripped
 Transform:
@@ -2437,9 +2459,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dcc6db49d2fe0b459ab2b248eccbfa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctPoints: 0
+  _correctPoints: 500
   _wrongPoints: 0
   _score: {fileID: 6812532615077438616}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 2
+        objectType: 1
+      _quantity: 5
   _npc: 0
 --- !u!4 &7990669819776004737 stripped
 Transform:
@@ -2928,9 +2956,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dcc6db49d2fe0b459ab2b248eccbfa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctPoints: 0
+  _correctPoints: 500
   _wrongPoints: 0
   _score: {fileID: 6812532615181624567}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 4
+        objectType: 3
+      _quantity: 5
   _npc: 0
 --- !u!4 &7990669818966420351 stripped
 Transform:
@@ -3339,9 +3373,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd25fea9790ec3a4eb01d128de2aea79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctPoints: 750
+  _correctPoints: 500
   _wrongPoints: 0
   _score: {fileID: 6812532616067513281}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 7
+        objectType: 14
+      _quantity: 2
+    - _objID:
+        trashType: 4
+        objectType: 3
+      _quantity: 3
   _npc: 0
   _reward: {fileID: 7327180060568781981}
 --- !u!4 &7990669818948139270 stripped
@@ -4170,9 +4214,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd25fea9790ec3a4eb01d128de2aea79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctPoints: 1000
+  _correctPoints: 500
   _wrongPoints: 0
   _score: {fileID: 6812532615528898267}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 6
+        objectType: 17
+      _quantity: 1
+    - _objID:
+        trashType: 6
+        objectType: 18
+      _quantity: 3
   _npc: 3
   _reward: {fileID: 0}
 --- !u!4 &7990669818691262291 stripped
@@ -4608,6 +4662,12 @@ MonoBehaviour:
   _correctPoints: 500
   _wrongPoints: 0
   _score: {fileID: 6812532616001806909}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 8
+        objectType: 2
+      _quantity: 3
   _npc: 2
   _reward: {fileID: 0}
 --- !u!4 &7990669818539997118 stripped

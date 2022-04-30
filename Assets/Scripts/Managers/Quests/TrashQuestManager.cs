@@ -6,15 +6,16 @@ using UnityEngine;
 //Player quests
 public class TrashQuestManager : QuestManager
 {
-
     void Start()
     {
         EventManager.CorrectRecycling += HandleCorrectRecycle;
         EventManager.WrongRecycling += HandleWrongRecycle;
     }
 
-    protected void HandleCorrectRecycle(Enums.TrashType trashType, Enums.ObjectType objectType)
+    protected void HandleCorrectRecycle(RecyclableObject.ObjID ID)
     {
+
+
         //if (_genericQuests.TryGetValue(trashType, out int count))
         //{
         //    --count;
