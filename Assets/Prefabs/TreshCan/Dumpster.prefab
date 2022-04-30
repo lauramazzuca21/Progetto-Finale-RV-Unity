@@ -111,7 +111,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 276139930145371044}
-  - component: {fileID: 8585356723184787960}
   - component: {fileID: 8092988562935484165}
   m_Layer: 0
   m_Name: TriggerAresSX
@@ -134,19 +133,6 @@ Transform:
   m_Father: {fileID: 4959465816235025901}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8585356723184787960
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660030910164901561}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 1, z: 2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8092988562935484165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,8 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb1ca9df04c766d42819bbbe7dbcefec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 0}
-  _raycast: {fileID: 0}
+  _animator: {fileID: 7584038492864954188}
+  _raycast: {fileID: 536994503865062713}
 --- !u!1 &5735438917135630167
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,7 +335,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6858928316103890867}
-  - component: {fileID: 5786586813720931548}
   - component: {fileID: 7308294076254893357}
   m_Layer: 0
   m_Name: TriggerAresDX
@@ -372,19 +357,6 @@ Transform:
   m_Father: {fileID: 4959465816235025901}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5786586813720931548
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8409373106735016062}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 1, z: 2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7308294076254893357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,8 +369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb1ca9df04c766d42819bbbe7dbcefec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 0}
-  _raycast: {fileID: 0}
+  _animator: {fileID: 4852970131974203188}
+  _raycast: {fileID: 536994503865062713}
 --- !u!1 &8784302849737220025
 GameObject:
   m_ObjectHideFlags: 0
