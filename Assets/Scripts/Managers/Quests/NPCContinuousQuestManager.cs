@@ -33,7 +33,7 @@ public class NPCContinuousQuestManager : QuestManager
                     inv.UpdateInventory(k, used);
                     if (_questList.IsQuestComplete())
                     {
-                        EventManager.FirePointsEvent(CorrectPoints * completedQuest);
+                        EventManager.FirePoints(CorrectPoints * completedQuest);
                     }
 
                 } 
@@ -43,7 +43,7 @@ public class NPCContinuousQuestManager : QuestManager
 
 
                 if (completedQuest > 0)
-                    EventManager.FirePointsEvent(CorrectPoints * completedQuest);
+                    EventManager.FirePoints(CorrectPoints * completedQuest);
             }
         }
 

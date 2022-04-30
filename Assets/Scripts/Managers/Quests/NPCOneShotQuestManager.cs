@@ -43,7 +43,7 @@ public class NPCOneShotQuestManager : QuestManager
         {
             _isActive = false;
             _reward.SetActive(true);
-            EventManager.FirePointsEvent(CorrectPoints);
+            EventManager.FirePoints(CorrectPoints);
         }
     }
 }

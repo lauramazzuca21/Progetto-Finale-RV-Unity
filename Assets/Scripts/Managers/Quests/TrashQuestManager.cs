@@ -42,6 +42,6 @@ public class TrashQuestManager : QuestManager
 
     protected void HandleWrongRecycle()
     {
-        EventManager.FirePointsEvent(WrongPoints);
+        EventManager.FirePoints(WrongPoints);
     }
 }
