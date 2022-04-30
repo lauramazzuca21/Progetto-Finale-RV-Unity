@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1.5
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 63990adb8e0d0ff468b72b0e8951237e, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: fb3b9b55c01d2194c816b2d469854e16, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1086,13 +1086,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22301019}
-  m_LocalRotation: {x: 0.22414392, y: 0.48296294, z: -0.12940955, w: 0.8365163}
-  m_LocalPosition: {x: -3.18, y: 3, z: 0}
+  m_LocalRotation: {x: 0.029799752, y: 0.68259126, z: -0.20561723, w: -0.70064455}
+  m_LocalPosition: {x: 217.1, y: 46.9, z: 23.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 13.824, y: 273.919, z: 19.793}
 --- !u!1001 &31288977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28305,6 +28305,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2593905829237488761, guid: 35663af338b574d98a27d992abdc2761, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2593905829340686725, guid: 35663af338b574d98a27d992abdc2761, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -28412,6 +28416,14 @@ PrefabInstance:
     - target: {fileID: 7340304094876834295, guid: 35663af338b574d98a27d992abdc2761, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7504907291073356553, guid: 35663af338b574d98a27d992abdc2761, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7504907291073356553, guid: 35663af338b574d98a27d992abdc2761, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.67
       objectReference: {fileID: 0}
     - target: {fileID: 7625110180103313904, guid: 35663af338b574d98a27d992abdc2761, type: 3}
       propertyPath: m_IsActive
