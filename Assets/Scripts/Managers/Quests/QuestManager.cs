@@ -24,7 +24,7 @@ public abstract class QuestManager : MonoBehaviour
 
         foreach (Structs.Quest q in _quests.List) 
         {
-            str += q.ID.trashType + " " + q.ID.objectType + ":\t" + q.CurrentQuantity + "/" + q.Quantity + "\n";
+            str += q.ID.trashType + " " + q.ID.objectType + ":\t\t" + q.CurrentQuantity + "/" + q.Quantity + "\n";
         }
         _score.text = str;
     }
