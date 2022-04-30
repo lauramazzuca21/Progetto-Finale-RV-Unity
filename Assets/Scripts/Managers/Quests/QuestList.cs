@@ -30,7 +30,7 @@ public class QuestList
 
     public bool IsQuestComplete()
     {
-        bool result = false;
+        bool result = true;
         foreach (Structs.Quest q in _questList)
             result = q.IsComplete() && result;
 

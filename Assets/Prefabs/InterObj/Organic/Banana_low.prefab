@@ -291,4 +291,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id:
     trashType: 2
-    objectType: 1
+    objectType: 0

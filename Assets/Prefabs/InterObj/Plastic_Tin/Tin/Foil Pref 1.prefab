@@ -173,7 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id:
     trashType: 4
-    objectType: 1
+    objectType: 0
 --- !u!1001 &7058858383460523900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -199,15 +199,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 025cc24b44f1740e79d944283c222c15, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 60.16958
+      value: 0.166
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 025cc24b44f1740e79d944283c222c15, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.46043015
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 025cc24b44f1740e79d944283c222c15, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 24.602892
+      value: -0.321
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 025cc24b44f1740e79d944283c222c15, type: 3}
       propertyPath: m_LocalRotation.w

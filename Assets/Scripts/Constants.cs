@@ -69,13 +69,13 @@ namespace Enums
 namespace Structs
 {
     [System.Serializable]
-    public struct Quest
+    public class Quest
     {
         [UnityEngine.SerializeField]
         RecyclableObject.ObjID _objID;
         [UnityEngine.SerializeField]
         int _quantity;
-        int _currentQuantity;
+        int _currentQuantity = 0;
 
         public RecyclableObject.ObjID ID { get { return _objID; } }
         public int Quantity { get { return _quantity; } }
@@ -90,7 +90,7 @@ namespace Structs
 
         public int Increase(int qt = 1)
         {
-            int used = qt + _currentQuantity > _quantity ? qt - (_quantity - _currentQuantity) : qt;
+            int used = qt + _currentQuantity > _quantity ? _quantity - _currentQuantity : qt;
             _currentQuantity += used;
             return used;
         }

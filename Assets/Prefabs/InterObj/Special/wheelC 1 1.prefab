@@ -210,8 +210,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id:
-    trashType: 0
-    objectType: 1
+    trashType: 8
+    objectType: 12
 --- !u!1 &538534022451255634
 GameObject:
   m_ObjectHideFlags: 0
