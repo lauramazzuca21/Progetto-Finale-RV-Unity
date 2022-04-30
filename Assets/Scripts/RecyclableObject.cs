@@ -22,7 +22,7 @@ public class RecyclableObject : MonoBehaviour
         }
         public override bool Equals(object obj)
         {
-            return obj is ObjID other && (trashType == other.trashType && objectType == other.objectType);
+            return obj is ObjID other && ((trashType == other.trashType && objectType == other.objectType) || (trashType == other.trashType && this.objectType == Enums.ObjectType.ANY));
         }
     };
 

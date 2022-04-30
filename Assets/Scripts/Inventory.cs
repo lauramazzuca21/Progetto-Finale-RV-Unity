@@ -80,9 +80,9 @@ public class Inventory : MonoBehaviour
 
     private void PrintLog()
     {
-        //foreach (KeyValuePair<RecyclableObject.ObjID, int> pair in _inventory)
-        //{
-        //    UnityEngine.Debug.Log(pair.Value + " of " + pair.Key.trashType + " " + pair.Key.objectType);
-        //} 
+        foreach (KeyValuePair<RecyclableObject.ObjID, int> pair in _inventory)
+        {
+            UnityEngine.Debug.Log(pair.Value + " of " + pair.Key.trashType + " " + pair.Key.objectType);
+        }
     }
 }

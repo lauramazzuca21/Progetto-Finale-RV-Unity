@@ -6,14 +6,8 @@ using UnityEngine;
 public class NPCContinuousQuestManager : QuestManager
 {
     [SerializeField]
-    private Enums.TrashType _trashType;
-    [SerializeField]
-    //FIXME: horrid code to handle stupid exception for librarian in a very quick way
-    private List<Enums.ObjectType> _objectTypes = new List<Enums.ObjectType>();
-    [SerializeField]
-    private int _maxObjects = 0;
+    private Enums.ContinuousQuestNPCs _npc;
 
-    private int _countInstances = 0;
     private void Start()
     {
         EventManager.PlayerInteraction += HandlePlayerInteraction;
@@ -30,35 +24,30 @@ public class NPCContinuousQuestManager : QuestManager
 
         foreach (RecyclableObject.ObjID k in keys)
         {
-            if (k.trashType == this._trashType && CheckObjectType(k.objectType))
-            {
-                inv.GetInventory.TryGetValue(k, out int value);
+            //if (_objects.Contains(k))
+            //{
+            //    inv.GetInventory.TryGetValue(k, out int value);
 
-                int completedQuest = Mathf.FloorToInt((_countInstances + value) / _maxObjects * 1.0f); //counts the times the quest has been acheived thanks to the stored items
-                _countInstances = (_countInstances + value) - completedQuest * _maxObjects;
+            //    int completedQuest = Mathf.FloorToInt((_countInstances + value) / _maxObjects * 1.0f); //counts the times the quest has been acheived thanks to the stored items
+            //    _countInstances = (_countInstances + value) - completedQuest * _maxObjects;
 
-                inv.UpdateInventory(k, value);
+            //    inv.UpdateInventory(k, value);
 
-                if (completedQuest > 0) 
-                    EventManager.FirePointsEvent(CorrectPoints * completedQuest);
-            }
+            //    if (completedQuest > 0) 
+            //        EventManager.FirePointsEvent(CorrectPoints * completedQuest);
+            //}
         }
 
         UpdateScore();
     }
 
-    private bool CheckObjectType(Enums.ObjectType objectType)
-    {
-        return (_objectTypes.Count > 0 && _objectTypes.Contains(objectType)) || _objectTypes.Count == 0;
-    }
-
     private void UpdateScore()
     {
-        string str = _trashType + ":\t\t" + _countInstances + "/" + _maxObjects + "\n";
-        for (int i = 0; i < _objectTypes.Count; i++)
-        {
-            str = _objectTypes[i] + ":\t\t" + _countInstances + "/" + _maxObjects + "\n";
-        }
+        string str = "";
+        //for (int i = 0; i < _questObjects.Count; i++)
+        //{
+        //    str += _objects[i] + ":\t" + _countInstances + "/" + _maxObjects + "\n";
+        //}
         _score.text = str;
     }
 

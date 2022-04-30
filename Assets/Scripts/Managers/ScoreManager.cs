@@ -18,14 +18,14 @@ public class ScoreManager : MonoBehaviour
     void UpdateScore(int pts)
     {
         points += pts;
-        UpdateScoreLabel();
+        _ = StartCoroutine(UpdateScoreLabel());
     }
 
     private IEnumerator UpdateScoreLabel()
     {
         scoreLabel.text = "Current score: " + points.ToString();
-
-        yield return new WaitForSeconds(2);
+        UnityEngine.Debug.Log(scoreLabel.text);
+        yield return new WaitForSeconds(5);
         scoreLabel.text = "";
     }
 

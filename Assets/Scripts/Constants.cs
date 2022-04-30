@@ -19,6 +19,7 @@ namespace Enums
     public enum ObjectType
     {
         OTHER, //cosi i specificano solo quelli necesari
+        ANY,
         DRUG,
         CAN,
         CASE,
@@ -59,6 +60,30 @@ namespace Enums
         ARTESAN,
         DOCTOR,
         ECOISLANDER
+    }
+}
+
+namespace Structs
+{
+    [System.Serializable]
+    public struct Quest
+    {
+        public RecyclableObject.ObjID _objID;
+        public int _quantity;
+
+        int _currentQuantity;
+
+        public Quest(RecyclableObject.ObjID objID, int quantity)
+        {
+            _objID = objID;
+            _quantity = quantity;
+            _currentQuantity = 0;
+        }
+
+        public void Add(int qt = 1)
+        {
+            _currentQuantity += qt;
+        }
     }
 }
 public static class Constants
