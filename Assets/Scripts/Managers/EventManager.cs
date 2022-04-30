@@ -13,7 +13,7 @@ public class EventManager : MonoBehaviour
     public delegate void ReceivePlayerInteraction(GameObject gameObject);
     public static event ReceivePlayerInteraction PlayerInteraction;
 
-    public delegate void ReceiveCorrectRecycling(Enums.TrashType trashType, Enums.ObjectType objectType);
+    public delegate void ReceiveCorrectRecycling(RecyclableObject.ObjID ID);
     public static event ReceiveCorrectRecycling CorrectRecycling;
 
     public delegate void ReceiveWrongRecycling();
@@ -38,9 +38,9 @@ public class EventManager : MonoBehaviour
         PlayerInteraction?.Invoke(gameObject);
     }
 
-    internal static void FireCorrectRecycling(Enums.TrashType trashType, Enums.ObjectType objectType)
+    internal static void FireCorrectRecycling(RecyclableObject.ObjID ID)
     {
-        CorrectRecycling?.Invoke(trashType, objectType);
+        CorrectRecycling?.Invoke(ID);
     }
 
     internal static void FireWrongRecycling()

@@ -24,27 +24,19 @@ public class NPCContinuousQuestManager : QuestManager
 
         foreach (RecyclableObject.ObjID k in keys)
         {
-            if (inv.GetInventory.TryGetValue(k, out int value))
+            int value;
+            do
             {
-                int completedQuest = 0;
-                int used;
-                while ((used = _questList.UpdateQuest(k, value)) > 0) //until there are objects to consume
+                inv.GetInventory.TryGetValue(k, out value);
+
+                int used = _quests.UpdateQuest(k, value);
+                if (used > 0) inv.UpdateInventory(k, used);
+
+                if (_quests.IsQuestComplete())
                 {
-                    inv.UpdateInventory(k, used);
-                    if (_questList.IsQuestComplete())
-                    {
-                        EventManager.FirePoints(CorrectPoints * completedQuest);
-                    }
-
-                } 
-
-                //int completedQuest = Mathf.FloorToInt((_countInstances + value) / _maxObjects * 1.0f); //counts the times the quest has been acheived thanks to the stored items
-                //_countInstances = (_countInstances + value) - completedQuest * _maxObjects;
-
-
-                if (completedQuest > 0)
-                    EventManager.FirePoints(CorrectPoints * completedQuest);
-            }
+                    EventManager.FirePoints(CorrectPoints);
+                }
+            } while (value > 0);
         }
 
         UpdateScore();

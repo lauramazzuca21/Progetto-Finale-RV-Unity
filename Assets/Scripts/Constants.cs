@@ -36,7 +36,10 @@ namespace Enums
         SHIRTS,
         PANTS,
         TV,
-        WALKIE
+        WALKIE,
+        RAZER,
+        MUG,
+        SILICON
         
     }
 
@@ -107,8 +110,6 @@ namespace Structs
 }
 public static class Constants
 {
-    public static string InventoryMsg = "Press J to put in the inventory";
-
     public static Dictionary<Enums.AudioClips,string> Clips = new Dictionary<Enums.AudioClips, string> {
             {Enums.AudioClips.CORRECT, "correctAction" },
             {Enums.AudioClips.WRONG, "wrongAction" }

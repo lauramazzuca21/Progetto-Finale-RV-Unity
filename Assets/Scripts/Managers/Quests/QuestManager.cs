@@ -13,7 +13,7 @@ public abstract class QuestManager : MonoBehaviour
     protected TMPro.TextMeshPro _score;
     //"Select an object in the Quest Objects list and its respective quantity in Quest Quantities.They will be matched by position.";
     [SerializeField]
-    protected QuestList _questList = new QuestList();
+    protected QuestList _quests = new QuestList();
 
     protected int CorrectPoints { get { return _correctPoints; } set { _correctPoints = value; } }
     protected int WrongPoints { get { return _wrongPoints; } set { _wrongPoints = value; } }
@@ -22,7 +22,7 @@ public abstract class QuestManager : MonoBehaviour
     {
         string str = "";
 
-        foreach (Structs.Quest q in _questList)
+        foreach (Structs.Quest q in _quests.List) 
         {
             str += q.ID.trashType + " " + q.ID.objectType + ":\t" + q.CurrentQuantity + "/" + q.Quantity + "\n";
         }

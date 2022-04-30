@@ -32,14 +32,14 @@ public class NPCOneShotQuestManager : QuestManager
         {
             if (inv.GetInventory.TryGetValue(k, out int value))
             {
-                int used = _questList.UpdateQuest(k, value);
+                int used = _quests.UpdateQuest(k, value);
                 inv.UpdateInventory(k, used);
             }
         }
 
         UpdateScore();
 
-        if (_questList.IsQuestComplete())
+        if (_quests.IsQuestComplete())
         {
             _isActive = false;
             _reward.SetActive(true);

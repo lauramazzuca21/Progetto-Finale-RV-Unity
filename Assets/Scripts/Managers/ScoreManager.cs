@@ -13,6 +13,12 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
         EventManager.Points += UpdateScore;
+        EventManager.DisplayMessage += DisplayMessage;
+    }
+
+    private void DisplayMessage(string msg)
+    {
+        scoreLabel.text = msg;
     }
 
     void UpdateScore(int pts)
