@@ -6,26 +6,34 @@ using System.Text;
 using System.Threading.Tasks;
 
 //Class that represents a single quest
+[System.Serializable]
 public class QuestList : List<Structs.Quest>
 {
     public int UpdateQuest(RecyclableObject.ObjID obj, int qts = 1)
     {
-        if (Contains(obj, out int value))
+        foreach(Structs.Quest q in this)
         {
-            this[obj] = value - qts < 0 ? 0 : value-qts;
-
-            return qts - value < 0 ? qts : qts - value;
+            if (q.ID.Equals(obj))
+            {
+                int used = q.Increase(qts);
+                return used;
+            }
         }
-
         return 0;
     }
 
     public bool IsQuestComplete()
     {
-        int result = 0;
-        foreach (KeyValuePair<RecyclableObject.ObjID, int> p in this)
-            result += p.Value;
+        bool result = false;
+        foreach (Structs.Quest q in this)
+            result = q.IsComplete() && result;
 
-        return result == 0; 
+        return result; 
+    }
+
+    public void Reset()
+    {
+        foreach (Structs.Quest q in this)
+            q.Reset();
     }
 }

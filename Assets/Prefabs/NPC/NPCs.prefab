@@ -1199,12 +1199,6 @@ MonoBehaviour:
   _wrongPoints: 0
   _score: {fileID: 8108355760498072965}
   _npc: 1
-  _questObjects:
-  - trashType: 8
-    objectType: 13
-  - trashType: 3
-    objectType: 9
-  _questQuantities: 0200000003000000
   _reward: {fileID: 0}
 --- !u!4 &5527941446963486368 stripped
 Transform:
@@ -1612,9 +1606,7 @@ MonoBehaviour:
   _correctPoints: 0
   _wrongPoints: 0
   _score: {fileID: 6812532615610213325}
-  _trashType: 3
-  _objectTypes: 
-  _maxObjects: 5
+  _npc: 0
 --- !u!4 &7990669820152618760 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f5572806e2ca57a4fb00d47f55f4fd2f, type: 3}
@@ -2025,9 +2017,7 @@ MonoBehaviour:
   _correctPoints: 0
   _wrongPoints: 0
   _score: {fileID: 6812532615437663414}
-  _trashType: 0
-  _objectTypes: 04000000
-  _maxObjects: 6
+  _npc: 0
 --- !u!4 &7990669819801864661 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 710782716a716b7429c6c8829b3903f1, type: 3}
@@ -2450,9 +2440,7 @@ MonoBehaviour:
   _correctPoints: 0
   _wrongPoints: 0
   _score: {fileID: 6812532615077438616}
-  _trashType: 2
-  _objectTypes: 
-  _maxObjects: 5
+  _npc: 0
 --- !u!4 &7990669819776004737 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f15239ff875fb8a4b99f88beb9067be7, type: 3}
@@ -2943,9 +2931,7 @@ MonoBehaviour:
   _correctPoints: 0
   _wrongPoints: 0
   _score: {fileID: 6812532615181624567}
-  _trashType: 4
-  _objectTypes: 
-  _maxObjects: 5
+  _npc: 0
 --- !u!4 &7990669818966420351 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 81a54200e452955498d3bb3d3578698b, type: 3}
@@ -3357,14 +3343,6 @@ MonoBehaviour:
   _wrongPoints: 0
   _score: {fileID: 6812532616067513281}
   _npc: 0
-  _questObjects:
-  - trashType: 7
-    objectType: 14
-  - trashType: 1
-    objectType: 9
-  - trashType: 4
-    objectType: 3
-  _questQuantities: 020000000300000002000000
   _reward: {fileID: 7327180060568781981}
 --- !u!4 &7990669818948139270 stripped
 Transform:
@@ -4196,12 +4174,6 @@ MonoBehaviour:
   _wrongPoints: 0
   _score: {fileID: 6812532615528898267}
   _npc: 3
-  _questObjects:
-  - trashType: 8
-    objectType: 17
-  - trashType: 8
-    objectType: 18
-  _questQuantities: 0100000001000000
   _reward: {fileID: 0}
 --- !u!4 &7990669818691262291 stripped
 Transform:
@@ -4637,10 +4609,6 @@ MonoBehaviour:
   _wrongPoints: 0
   _score: {fileID: 6812532616001806909}
   _npc: 2
-  _questObjects:
-  - trashType: 8
-    objectType: 2
-  _questQuantities: 02000000
   _reward: {fileID: 0}
 --- !u!4 &7990669818539997118 stripped
 Transform:

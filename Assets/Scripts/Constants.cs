@@ -68,10 +68,15 @@ namespace Structs
     [System.Serializable]
     public struct Quest
     {
-        public RecyclableObject.ObjID _objID;
-        public int _quantity;
-
+        [UnityEngine.SerializeField]
+        RecyclableObject.ObjID _objID;
+        [UnityEngine.SerializeField]
+        int _quantity;
         int _currentQuantity;
+
+        public RecyclableObject.ObjID ID { get { return _objID; } }
+        public int Quantity { get { return _quantity; } }
+        public int CurrentQuantity { get { return _currentQuantity; } }
 
         public Quest(RecyclableObject.ObjID objID, int quantity)
         {
@@ -80,9 +85,23 @@ namespace Structs
             _currentQuantity = 0;
         }
 
-        public void Add(int qt = 1)
+        public int Increase(int qt = 1)
         {
-            _currentQuantity += qt;
+            int used = qt + _currentQuantity > _quantity ? qt - (_quantity - _currentQuantity) : qt;
+            _currentQuantity += used;
+            return used;
+        }
+
+        public bool IsComplete()
+        {
+            if (_currentQuantity >= _quantity)
+                return true;
+            return false;
+        }
+
+        public void Reset()
+        {
+            _currentQuantity = 0;
         }
     }
 }
