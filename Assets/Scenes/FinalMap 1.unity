@@ -3600,6 +3600,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Can (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5938975757263497896, guid: 99feb65adf6f33a4b818e4fc614a18d6, type: 3}
+      propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938975757263497896, guid: 99feb65adf6f33a4b818e4fc614a18d6, type: 3}
+      propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938975757263497896, guid: 99feb65adf6f33a4b818e4fc614a18d6, type: 3}
+      propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1078268264}
+    - target: {fileID: 5938975757263497896, guid: 99feb65adf6f33a4b818e4fc614a18d6, type: 3}
+      propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99feb65adf6f33a4b818e4fc614a18d6, type: 3}
 --- !u!4 &141709773 stripped
@@ -24947,6 +24963,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 944268141144237499, guid: 71b32dcd83635b345924c4839ee71b2b, type: 3}
   m_PrefabInstance: {fileID: 1948073266}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1078268264 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6987883955331156831, guid: 364a8c55835c3cc46b0a440af1fa6c3c, type: 3}
+  m_PrefabInstance: {fileID: 5997356172243812174}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1086640225
 GameObject:
   m_ObjectHideFlags: 0
@@ -36592,6 +36613,34 @@ PrefabInstance:
       propertyPath: _reward
       value: 
       objectReference: {fileID: 154701852}
+    - target: {fileID: 4710112805172465797, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
+      propertyPath: _questList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710112805172465797, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
+      propertyPath: _questList.Array.data[0]._quantity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710112805172465797, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
+      propertyPath: _questList.Array.data[1]._quantity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710112805172465797, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
+      propertyPath: _questList.Array.data[0]._objID.trashType
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710112805172465797, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
+      propertyPath: _questList.Array.data[1]._objID.trashType
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710112805172465797, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
+      propertyPath: _questList.Array.data[0]._objID.objectType
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710112805172465797, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
+      propertyPath: _questList.Array.data[1]._objID.objectType
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 7597069682463275238, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
       propertyPath: _objectTypes.Array.size
       value: 0

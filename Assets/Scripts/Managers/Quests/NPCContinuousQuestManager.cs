@@ -24,31 +24,29 @@ public class NPCContinuousQuestManager : QuestManager
 
         foreach (RecyclableObject.ObjID k in keys)
         {
-            //if (_objects.Contains(k))
-            //{
-            //    inv.GetInventory.TryGetValue(k, out int value);
+            if (inv.GetInventory.TryGetValue(k, out int value))
+            {
+                int completedQuest = 0;
+                int used;
+                while ((used = _questList.UpdateQuest(k, value)) > 0) //until there are objects to consume
+                {
+                    inv.UpdateInventory(k, used);
+                    if (_questList.IsQuestComplete())
+                    {
+                        EventManager.FirePointsEvent(CorrectPoints * completedQuest);
+                    }
 
-            //    int completedQuest = Mathf.FloorToInt((_countInstances + value) / _maxObjects * 1.0f); //counts the times the quest has been acheived thanks to the stored items
-            //    _countInstances = (_countInstances + value) - completedQuest * _maxObjects;
+                } 
 
-            //    inv.UpdateInventory(k, value);
+                //int completedQuest = Mathf.FloorToInt((_countInstances + value) / _maxObjects * 1.0f); //counts the times the quest has been acheived thanks to the stored items
+                //_countInstances = (_countInstances + value) - completedQuest * _maxObjects;
 
-            //    if (completedQuest > 0) 
-            //        EventManager.FirePointsEvent(CorrectPoints * completedQuest);
-            //}
+
+                if (completedQuest > 0)
+                    EventManager.FirePointsEvent(CorrectPoints * completedQuest);
+            }
         }
 
         UpdateScore();
     }
-
-    private void UpdateScore()
-    {
-        string str = "";
-        //for (int i = 0; i < _questObjects.Count; i++)
-        //{
-        //    str += _objects[i] + ":\t" + _countInstances + "/" + _maxObjects + "\n";
-        //}
-        _score.text = str;
-    }
-
 }
