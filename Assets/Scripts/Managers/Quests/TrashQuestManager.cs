@@ -6,6 +6,9 @@ using UnityEngine;
 //Player quests
 public class TrashQuestManager : QuestManager
 {
+    [SerializeField]
+    private GameObject _reward;
+
     void Start()
     {
         EventManager.CorrectRecycling += HandleCorrectRecycle;
@@ -38,6 +41,8 @@ public class TrashQuestManager : QuestManager
         //    else _specificQuests[objectType] = cnt;
 
         //}
+
+
 
     }
 

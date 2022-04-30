@@ -260,4 +260,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id:
     trashType: 5
-    objectType: 0
+    objectType: 20
