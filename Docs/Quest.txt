@@ -138,4 +138,9 @@ TIN - BARISTA (x5): ogni 5 oggetti di latta
 MILKMAN (x5): ogni 5 oggetti di vetro
 vetro
 
+ASSETS MANCANTI:
+Bottiglia di plastica
+Tavola di legno
+Bottiglie vetro
+
 
