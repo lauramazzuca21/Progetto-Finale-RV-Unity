@@ -5443,6 +5443,11 @@ CapsuleCollider:
   m_Height: 2.7492452
   m_Direction: 1
   m_Center: {x: 0, y: 0.8746226, z: 0}
+--- !u!1 &1598095025 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6528918445496755189, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
+  m_PrefabInstance: {fileID: 3404174079806956658}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1675920174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19020,6 +19025,10 @@ PrefabInstance:
       propertyPath: _changeEffect
       value: 
       objectReference: {fileID: 864856618}
+    - target: {fileID: 1309354717, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
+      propertyPath: _charachterMesh
+      value: 
+      objectReference: {fileID: 1598095025}
     - target: {fileID: 4710112805172465797, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
       propertyPath: _npc
       value: 1
@@ -19107,6 +19116,10 @@ PrefabInstance:
     - target: {fileID: 5527941446963486368, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6528918445496755189, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6812532616067513281, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
       propertyPath: m_margin.w
