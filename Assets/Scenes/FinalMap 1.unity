@@ -1652,7 +1652,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &536544598
 Transform:
   m_ObjectHideFlags: 0
@@ -1660,13 +1660,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536544597}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.756, z: 0.68}
-  m_LocalScale: {x: 1.7, y: 0.86247, z: 0.01}
-  m_Children: []
+  m_LocalRotation: {x: 0.043619405, y: 0, z: 0, w: 0.9990483}
+  m_LocalPosition: {x: 0, y: 1.3, z: 1.45}
+  m_LocalScale: {x: 2.0400002, y: 0.548898, z: 0.01}
+  m_Children:
+  - {fileID: 880769172}
+  - {fileID: 1922060813}
   m_Father: {fileID: 1317306786}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 5, y: 0, z: 0}
 --- !u!65 &536544599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2885,16 +2887,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800695784}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.66400146}
-  m_LocalScale: {x: 1, y: 1, z: 0.01}
+  m_LocalRotation: {x: 0.043619405, y: -0, z: -0, w: 0.9990483}
+  m_LocalPosition: {x: 0, y: 0, z: 1.4351158}
+  m_LocalScale: {x: 1, y: 1, z: 0.010000001}
   m_Children: []
   m_Father: {fileID: 1317306786}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.596}
+  m_AnchoredPosition: {x: 0, y: 1.276003}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &800695786
@@ -2917,9 +2919,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Espero que esta experiencia te haya ayudado a comprender mejor la importancia
-    del reciclaje. Para agradecerte, \xA1te regalar\xE9 una marioneta hecha completamente
-    con material reciclado! Puedes encontrarlo en tu estanter\xEDa de trofeos."
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2946,15 +2946,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.75
-  m_fontSizeBase: 0.75
+  m_fontSize: 0.5
+  m_fontSizeBase: 0.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3382,15 +3382,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880769171}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.66400146}
-  m_LocalScale: {x: 1, y: 1, z: 0.01}
+  m_LocalPosition: {x: 0, y: 0, z: -1.2675558}
+  m_LocalScale: {x: 0.49019605, y: 1.8218321, z: 1}
   m_Children: []
-  m_Father: {fileID: 1317306786}
-  m_RootOrder: 8
+  m_Father: {fileID: 536544598}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.855}
+  m_AnchoredPosition: {x: 0, y: -0.04956925}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &880769173
@@ -3476,7 +3476,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.190077, y: 2.1893163, z: 9.192825, w: 2.6170225}
+  m_margin: {x: 9.027216, y: 2.2199595, z: 9.070618, w: 2.6346188}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -7133,15 +7133,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922060812}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.66400146}
-  m_LocalScale: {x: 1, y: 1, z: 0.01}
+  m_LocalPosition: {x: 0, y: 0, z: -1.2736132}
+  m_LocalScale: {x: 0.49019605, y: 1.8218321, z: 1}
   m_Children: []
-  m_Father: {fileID: 1317306786}
-  m_RootOrder: 9
+  m_Father: {fileID: 536544598}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.596}
+  m_AnchoredPosition: {x: 0, y: -0.045915365}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1922060814
@@ -7193,8 +7193,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.75
-  m_fontSizeBase: 0.75
+  m_fontSize: 0.65
+  m_fontSizeBase: 0.65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7229,7 +7229,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.190077, y: 2.1893163, z: 9.192825, w: 2.3173423}
+  m_margin: {x: 9.02622, y: 2.3709502, z: 9.023268, w: 2.2831404}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -55911,6 +55911,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1401048418, guid: 364a8c55835c3cc46b0a440af1fa6c3c, type: 3}
+      propertyPath: _panel
+      value: 
+      objectReference: {fileID: 536544597}
     - target: {fileID: 1401048418, guid: 364a8c55835c3cc46b0a440af1fa6c3c, type: 3}
       propertyPath: _scoreLabel
       value: 

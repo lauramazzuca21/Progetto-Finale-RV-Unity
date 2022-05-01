@@ -11,6 +11,7 @@ public class TextManager : MonoBehaviour
     private TMPro.TextMeshPro _messageLabel;
     [SerializeField]
     private TMPro.TextMeshPro _scoreLabel;
+    [SerializeField]
     private GameObject _panel;
 
     private int points = 0;

@@ -22,12 +22,12 @@ public class NPCContinuousQuestManager : QuestManager
 
         foreach (RecyclableObject.ObjID k in keys)
         {
-            int value;
+            int used;
             do
             {
-                inv.GetInventory.TryGetValue(k, out value);
+                inv.GetInventory.TryGetValue(k, out int value);
 
-                int used = _quests.UpdateQuest(k, value);
+                used = _quests.UpdateQuest(k, value);
                 if (used > 0) inv.UpdateInventory(k, used);
 
                 if (_quests.AreQuestsComplete())
@@ -35,7 +35,7 @@ public class NPCContinuousQuestManager : QuestManager
                     EventManager.FireDisplayMessage(BuildMessage(), 12);
                     EventManager.FirePoints(CorrectPoints);
                 }
-            } while (value > 0);
+            } while (used > 0);
         }
 
         UpdateScore();

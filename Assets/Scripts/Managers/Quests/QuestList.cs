@@ -16,6 +16,9 @@ public class QuestList
 
     public int UpdateQuest(RecyclableObject.ObjID obj, int qts = 1)
     {
+        if (qts == 0)
+            return 0;
+
         foreach(Classes.Quest q in _questList)
         {
             if (q.ID.Equals(obj))
