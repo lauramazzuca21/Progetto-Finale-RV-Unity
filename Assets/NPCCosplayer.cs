@@ -6,15 +6,23 @@ public class NPCCosplayer : MonoBehaviour
 {
     [SerializeField]
     private GameObject _cosplayer;
-    // Start is called before the first frame update
+    [SerializeField]
+    private GameObject _charachterMesh;
     void Awake()
     {
         _cosplayer.SetActive(false);
+        _charachterMesh.SetActive(false);
+        GetComponent<Animator>().enabled = false;
+
+        StartCoroutine(StartAnimation());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator StartAnimation()
     {
-        
+        yield return new WaitForSeconds(.5f);
+        GetComponent<Animator>().enabled = true;
+        _charachterMesh.SetActive(true);
+        StopAllCoroutines();
     }
+
 }
