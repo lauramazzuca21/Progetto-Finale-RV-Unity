@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EventManager : MonoBehaviour
 {
@@ -19,7 +18,7 @@ public class EventManager : MonoBehaviour
     public delegate void ReceiveWrongRecycling();
     public static event ReceiveWrongRecycling WrongRecycling;
 
-    public delegate void ReceiveDisplayMessage(string msg);
+    public delegate void ReceiveDisplayMessage(Classes.Message msg, int lastInSec);
     public static event ReceiveDisplayMessage DisplayMessage;
 
 
@@ -48,8 +47,8 @@ public class EventManager : MonoBehaviour
         WrongRecycling?.Invoke();
     }
 
-    public static void FireDisplayMessage(string msg)
+    public static void FireDisplayMessage(Classes.Message msg, int lastInSec)
     {
-        DisplayMessage?.Invoke(msg);
+        DisplayMessage?.Invoke(msg, lastInSec);
     }
 }

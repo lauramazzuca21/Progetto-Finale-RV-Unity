@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public abstract class QuestManager : MonoBehaviour
 {
@@ -21,10 +18,12 @@ public abstract class QuestManager : MonoBehaviour
     protected void UpdateScore()
     {
         string str = "";
-
-        foreach (Structs.Quest q in _quests.List) 
+        foreach (Classes.Quest q in _quests.List) 
         {
-            str += q.ID.trashType + " " + q.ID.objectType + ":\t\t" + q.CurrentQuantity + "/" + q.Quantity + "\n";
+            Constants.TrashDictionary.TryGetValue(q.ID.trashType, out string trashType);
+            Constants.ObjectDictionary.TryGetValue(q.ID.objectType, out string objectType);
+
+            str += trashType + " " + objectType + ":\t\t" + q.CurrentQuantity + "/" + q.Quantity + "\n";
         }
         _score.text = str;
     }

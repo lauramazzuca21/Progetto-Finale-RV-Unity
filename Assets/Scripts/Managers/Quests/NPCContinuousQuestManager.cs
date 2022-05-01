@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCContinuousQuestManager : QuestManager
@@ -32,13 +30,23 @@ public class NPCContinuousQuestManager : QuestManager
                 int used = _quests.UpdateQuest(k, value);
                 if (used > 0) inv.UpdateInventory(k, used);
 
-                if (_quests.IsQuestComplete())
+                if (_quests.AreQuestsComplete())
                 {
+                    EventManager.FireDisplayMessage(BuildMessage(), 12);
                     EventManager.FirePoints(CorrectPoints);
                 }
             } while (value > 0);
         }
 
         UpdateScore();
+    }
+
+    private Classes.Message BuildMessage()
+    {
+        Classes.Message m = new Classes.Message();
+        Constants.ContinuousDictionary.TryGetValue(_npc, out m.title);
+        m.message = "¡Gracias! Has sido de gran ayuda. Sería genial si pudieras traerme artículos como estos :)";
+
+        return m;
     }
 }
