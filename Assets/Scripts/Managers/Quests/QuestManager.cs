@@ -23,7 +23,7 @@ public abstract class QuestManager : MonoBehaviour
             Constants.TrashDictionary.TryGetValue(q.ID.trashType, out string trashType);
             Constants.ObjectDictionary.TryGetValue(q.ID.objectType, out string objectType);
 
-            str += trashType + " " + objectType + ":\t\t" + q.CurrentQuantity + "/" + q.Quantity + "\n";
+            str += objectType + " " + trashType + ":\t" + q.CurrentQuantity + "/" + q.Quantity + "\n";
         }
         _score.text = str;
     }

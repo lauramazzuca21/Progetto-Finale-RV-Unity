@@ -15,6 +15,17 @@ public class TextManager : MonoBehaviour
     private GameObject _panel;
 
     private int points = 0;
+    private TMPro.TextMeshPro[] _totalScoreLabels; 
+
+    private void Awake()
+    {
+        int i = 0;
+        foreach(GameObject g in GameObject.FindGameObjectsWithTag("Score"))
+        {
+            _totalScoreLabels[i] = g.GetComponent<TMPro.TextMeshPro>();
+            ++i;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -35,9 +46,23 @@ public class TextManager : MonoBehaviour
 
     private void UpdateScore(int pts)
     {
+        if(pts >= 0)
+        {
+            _scoreLabel.text = "+" + pts.ToString();
+            _scoreLabel.color = new Color(13, 159, 4);
+        }
+        else
+        {
+            _scoreLabel.text = pts.ToString();
+            _scoreLabel.color = new Color(159, 7, 4);
+        }
+
         points += pts;
-        _scoreLabel.text = points.ToString();
-        _ = StartCoroutine(ClearLabel(_scoreLabel, 5));
+        
+        foreach(TMPro.TextMeshPro t in _totalScoreLabels)
+            _scoreLabel.text = points.ToString();
+
+        _ = StartCoroutine(ClearLabel(_scoreLabel, 3));
     }
 
     private IEnumerator ClearLabel(TMPro.TextMeshPro label, int seconds)
