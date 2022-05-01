@@ -66,8 +66,14 @@ namespace Enums
     }
 }
 
-namespace Structs
+namespace Classes
 {
+    public class Message
+    {
+        public string title;
+        public string message;
+    }
+
     [System.Serializable]
     public class Quest
     {
@@ -113,5 +119,56 @@ public static class Constants
     public static Dictionary<Enums.AudioClips,string> Clips = new Dictionary<Enums.AudioClips, string> {
             {Enums.AudioClips.CORRECT, "correctAction" },
             {Enums.AudioClips.WRONG, "wrongAction" }
+        };
+
+    public static Dictionary<Enums.TrashType, string> TrashDictionary = new Dictionary<Enums.TrashType, string> {
+            {Enums.TrashType.PAPER, "PAPEL" },
+            {Enums.TrashType.PLASTIC, "PLASTICO" },
+            {Enums.TrashType.ORGANIC, "ORGANICO" },
+            {Enums.TrashType.SPECIAL, "ESPECIALES" },
+            {Enums.TrashType.TIN, "LATA" },
+            {Enums.TrashType.NONRECYCLABLE, "NO RECICLABLE" },
+            {Enums.TrashType.GLASS, "VIDRIO" },
+            {Enums.TrashType.FABRICS, "TEXTIL" },
+            {Enums.TrashType.ELECTRONICS, "APARATOS ELECTRONICOS" }
+        };
+
+    public static Dictionary<Enums.ObjectType, string> ObjectDictionary = new Dictionary<Enums.ObjectType, string> {
+            {Enums.ObjectType.ANY, "CUALQUIER" },
+            {Enums.ObjectType.BAG, "BOLSA" },
+            {Enums.ObjectType.BATTERY, "BATERIA" },
+            {Enums.ObjectType.BOOK, "LIBRO" },
+            {Enums.ObjectType.BOTTLE, "BOTELLA" },
+            {Enums.ObjectType.BOX, "CAJA" },
+            {Enums.ObjectType.CAN, "LATA" },
+            {Enums.ObjectType.CASE, "CAJON" },
+            {Enums.ObjectType.DRUG, "FARMACO" },
+            {Enums.ObjectType.GLASS, "VIDRIO" },
+            {Enums.ObjectType.MUG, "TAZA" },
+            {Enums.ObjectType.NEWSPAPER, "PERIODICO" },
+            {Enums.ObjectType.OTHER, "OTRO" },
+            {Enums.ObjectType.PANTS, "PANTALONES" },
+            {Enums.ObjectType.RAZER, "AFEITADOR" },
+            {Enums.ObjectType.SHIRTS, "CAMISETA" },
+            {Enums.ObjectType.SHOES, "ZAPATOS" },
+            {Enums.ObjectType.SILICON, "SILICONA" },
+            {Enums.ObjectType.TIRE, "NEUMATICO" },
+            {Enums.ObjectType.TV, "TV" },
+            {Enums.ObjectType.WALKIE, "WALKIE" },
+            {Enums.ObjectType.WOOD, "MADERA" }
+        };
+
+    public static Dictionary<Enums.OneShotQuestNPCs, string> OneShotDictionary = new Dictionary<Enums.OneShotQuestNPCs, string> {
+            {Enums.OneShotQuestNPCs.ARTESAN, "ARTESANA" },
+            {Enums.OneShotQuestNPCs.COSPLAYER, "COSPLAYER" },
+            {Enums.OneShotQuestNPCs.DOCTOR, "DOCTOR" },
+            {Enums.OneShotQuestNPCs.ECOISLANDER, "Técnico de reciclaje" }
+        };
+
+    public static Dictionary<Enums.ContinuousQuestNPCs, string> ContinuousDictionary = new Dictionary<Enums.ContinuousQuestNPCs, string> {
+            {Enums.ContinuousQuestNPCs.BARMAN, "CAMARERO" },
+            {Enums.ContinuousQuestNPCs.GARDENER, "JARDINERO" },
+            {Enums.ContinuousQuestNPCs.LIBRARIAN, "BIBLIOTECARIA" },
+            {Enums.ContinuousQuestNPCs.MILKMAN, "LECHERO" }
         };
 }

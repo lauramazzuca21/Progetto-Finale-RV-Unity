@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCOneShotQuestManager : QuestManager
@@ -39,11 +37,21 @@ public class NPCOneShotQuestManager : QuestManager
 
         UpdateScore();
 
-        if (_quests.IsQuestComplete())
+        if (_quests.AreQuestsComplete())
         {
             _isActive = false;
             _reward.SetActive(true);
             EventManager.FirePoints(CorrectPoints);
+            EventManager.FireDisplayMessage(BuildMessage(), 8);
         }
+
+    }
+    private Classes.Message BuildMessage()
+    {
+        Classes.Message m = new Classes.Message();
+        Constants.OneShotDictionary.TryGetValue(_npc, out m.title);
+        m.message = "¡Gracias! Has sido de gran ayuda. Te dejé un regalo sobre el estanteria de trofeos en la plaza principal.";
+
+        return m;
     }
 }

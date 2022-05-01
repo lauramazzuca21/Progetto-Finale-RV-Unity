@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCContinuousQuestManager : QuestManager
@@ -24,21 +22,31 @@ public class NPCContinuousQuestManager : QuestManager
 
         foreach (RecyclableObject.ObjID k in keys)
         {
-            int value;
+            int used;
             do
             {
-                inv.GetInventory.TryGetValue(k, out value);
+                inv.GetInventory.TryGetValue(k, out int value);
 
-                int used = _quests.UpdateQuest(k, value);
+                used = _quests.UpdateQuest(k, value);
                 if (used > 0) inv.UpdateInventory(k, used);
 
-                if (_quests.IsQuestComplete())
+                if (_quests.AreQuestsComplete())
                 {
+                    EventManager.FireDisplayMessage(BuildMessage(), 12);
                     EventManager.FirePoints(CorrectPoints);
                 }
-            } while (value > 0);
+            } while (used > 0);
         }
 
         UpdateScore();
+    }
+
+    private Classes.Message BuildMessage()
+    {
+        Classes.Message m = new Classes.Message();
+        Constants.ContinuousDictionary.TryGetValue(_npc, out m.title);
+        m.message = "¡Gracias! Has sido de gran ayuda. Sería genial si pudieras traerme artículos como estos :)";
+
+        return m;
     }
 }

@@ -1,5 +1,4 @@
 ﻿using Enums;
-using Structs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,13 +10,16 @@ using System.Threading.Tasks;
 public class QuestList
 {
     [UnityEngine.SerializeField]
-    List<Structs.Quest> _questList = new List<Structs.Quest>();
+    List<Classes.Quest> _questList = new List<Classes.Quest>();
 
-    public List<Structs.Quest> List { get { return _questList; }}
+    public List<Classes.Quest> List { get { return _questList; }}
 
     public int UpdateQuest(RecyclableObject.ObjID obj, int qts = 1)
     {
-        foreach(Structs.Quest q in _questList)
+        if (qts == 0)
+            return 0;
+
+        foreach(Classes.Quest q in _questList)
         {
             if (q.ID.Equals(obj))
             {
@@ -28,10 +30,10 @@ public class QuestList
         return 0;
     }
 
-    public bool IsQuestComplete()
+    public bool AreQuestsComplete()
     {
         bool result = true;
-        foreach (Structs.Quest q in _questList)
+        foreach (Classes.Quest q in _questList)
             result = q.IsComplete() && result;
 
         return result; 
@@ -39,7 +41,7 @@ public class QuestList
 
     public void Reset()
     {
-        foreach (Structs.Quest q in _questList)
+        foreach (Classes.Quest q in _questList)
             q.Reset();
     }
 }
