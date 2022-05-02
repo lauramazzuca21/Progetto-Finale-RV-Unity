@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCOneShotQuestManager : QuestManager
@@ -40,12 +41,19 @@ public class NPCOneShotQuestManager : QuestManager
         if (_quests.AreQuestsComplete())
         {
             _isActive = false;
-            _reward.SetActive(true);
             EventManager.FirePoints(CorrectPoints);
             EventManager.FireDisplayMessage(BuildMessage(), 8);
+            StartCoroutine(ActivateReward());
         }
 
     }
+
+    IEnumerator ActivateReward()
+    {
+        yield return new WaitForFixedUpdate();
+        _reward.SetActive(true);
+    }
+
     private Classes.Message BuildMessage()
     {
         Classes.Message m = new Classes.Message();

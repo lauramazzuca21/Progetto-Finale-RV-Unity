@@ -15,16 +15,19 @@ public class TextManager : MonoBehaviour
     private GameObject _panel;
 
     private int points = 0;
-    private TMPro.TextMeshPro[] _totalScoreLabels; 
+    private List<TMPro.TextMeshPro> _totalScoreLabels = new List<TMPro.TextMeshPro>(); 
 
     private void Awake()
     {
         int i = 0;
         foreach(GameObject g in GameObject.FindGameObjectsWithTag("Score"))
         {
-            _totalScoreLabels[i] = g.GetComponent<TMPro.TextMeshPro>();
+            if(g.GetComponent<TMPro.TextMeshPro>() != null)
+                _totalScoreLabels.Add(g.GetComponent<TMPro.TextMeshPro>());
             ++i;
         }
+
+        UnityEngine.Debug.Log("Found " + i + "objects of type.");
     }
     // Start is called before the first frame update
     void Start()
@@ -60,7 +63,7 @@ public class TextManager : MonoBehaviour
         points += pts;
         
         foreach(TMPro.TextMeshPro t in _totalScoreLabels)
-            _scoreLabel.text = points.ToString();
+            t.text = points.ToString();
 
         _ = StartCoroutine(ClearLabel(_scoreLabel, 3));
     }
