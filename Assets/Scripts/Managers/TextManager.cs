@@ -15,8 +15,8 @@ public class TextManager : MonoBehaviour
     private GameObject _panel;
 
     private int points = 0;
-    private List<TMPro.TextMeshPro> _totalScoreLabels = new List<TMPro.TextMeshPro>(); 
-
+    private List<TMPro.TextMeshPro> _totalScoreLabels = new List<TMPro.TextMeshPro>();
+    private Queue<KeyValuePair<Classes.Message, int>> _messagesQueue = new Queue<KeyValuePair<Classes.Message, int>>();
     private void Awake()
     {
         int i = 0;
@@ -40,11 +40,12 @@ public class TextManager : MonoBehaviour
 
     private void DisplayMessage(Classes.Message msg, int lastInSec)
     {
+        if (_panel.activeSelf)//if the panel is active it means that a message is already being shown so we need to enqueue the incoming message
+        {
+            _messagesQueue.Enqueue(new KeyValuePair<Classes.Message, int>(msg, lastInSec));
+        }
         _panel.SetActive(true);
-        _titleLabel.text = msg.title;
-        _messageLabel.text = msg.message;
-        _ = StartCoroutine(ClearLabel(_messageLabel, lastInSec));
-        _ = StartCoroutine(ClearPanel(lastInSec));
+        ShowPanel(msg, lastInSec);
     }
 
     private void UpdateScore(int pts)
@@ -77,7 +78,19 @@ public class TextManager : MonoBehaviour
     private IEnumerator ClearPanel(int seconds)
     {
         yield return new WaitForSeconds(seconds);
-        _panel.SetActive(false);
+        if (_messagesQueue.Count > 0)
+        {
+            KeyValuePair<Classes.Message, int> msg = _messagesQueue.Dequeue();
+            ShowPanel(msg.Key, msg.Value);
+        }
+        else
+            _panel.SetActive(false);
     }
 
+    private void ShowPanel(Classes.Message msg, int lastInSec)
+    {
+        _titleLabel.text = msg.title;
+        _messageLabel.text = msg.message;
+        _ = StartCoroutine(ClearPanel(lastInSec));
+    }
 }

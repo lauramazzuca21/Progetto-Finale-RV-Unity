@@ -3,9 +3,6 @@
 //Player quests
 public class TrashQuestManager : QuestManager
 {
-    [SerializeField]
-    private GameObject _reward;
-
     private const int _finalScore = 300;
     void Start()
     {
@@ -35,7 +32,10 @@ public class TrashQuestManager : QuestManager
         if(_quests.AreQuestsComplete())
         {
             EventManager.FireDisplayMessage(BuildMessage(null), 15);
-            _reward.SetActive(true);
+            if(_reward != null)
+                _reward.SetActive(true);
+            if (_light != null)
+                _light.SetActive(false); 
         }
     }
 

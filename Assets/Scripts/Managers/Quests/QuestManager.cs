@@ -8,6 +8,10 @@ public abstract class QuestManager : MonoBehaviour
     private int _wrongPoints = 0;
     [SerializeField]
     protected TMPro.TextMeshPro _score;
+    [SerializeField]
+    protected GameObject _reward;
+    [SerializeField]
+    protected GameObject _light;
     //"Select an object in the Quest Objects list and its respective quantity in Quest Quantities.They will be matched by position.";
     [SerializeField]
     protected QuestList _quests = new QuestList();

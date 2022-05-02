@@ -7,10 +7,6 @@ public class NPCOneShotQuestManager : QuestManager
     [SerializeField]
     private Enums.OneShotQuestNPCs _npc;
 
-    [SerializeField]
-    private GameObject _reward;
-
-
     private bool _isActive = true;
     
     void Start()
@@ -41,9 +37,12 @@ public class NPCOneShotQuestManager : QuestManager
         if (_quests.AreQuestsComplete())
         {
             _isActive = false;
+            if (_light != null)
+                _light.SetActive(false);
             EventManager.FirePoints(CorrectPoints);
             EventManager.FireDisplayMessage(BuildMessage(), 8);
-            StartCoroutine(ActivateReward());
+            if(_reward != null)
+                StartCoroutine(ActivateReward());
         }
 
     }
