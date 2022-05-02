@@ -15,17 +15,17 @@ public class TrashQuestManager : QuestManager
         //when all the quests are done activates thee reward and sends the message
         foreach(Classes.Quest q in _quests.List)
         {
-            if (  (q.ID.objectType == Enums.ObjectType.ANY && q.ID.trashType == ID.trashType) || q.ID.Equals(ID)   )
+            if (  !q.IsComplete() && (  (q.ID.objectType == Enums.ObjectType.ANY && q.ID.trashType == ID.trashType) || q.ID.Equals(ID)  ) )
             {
                 q.Increase();
                 //every time a single object is recycled get points
                 EventManager.FirePoints(CorrectPoints);
-            }
-            //every time the player completes a quest the mayor sends the message to congratulate and gets 300 pts
-            if (q.IsComplete())
-            {
-                EventManager.FireDisplayMessageOnPanel(BuildMessage(q), 6);
-                EventManager.FirePoints(_finalScore);
+                //every time the player completes a quest the mayor sends the message to congratulate and gets 300 pts
+                if (q.IsComplete())
+                {
+                    EventManager.FireDisplayMessageOnPanel(BuildMessage(q), 6);
+                    EventManager.FirePoints(_finalScore);
+                }
             }
         }
 
@@ -34,8 +34,8 @@ public class TrashQuestManager : QuestManager
             EventManager.FireDisplayMessageOnPanel(BuildMessage(null), 15);
             if(_reward != null)
                 _reward.SetActive(true);
-            if (_light != null)
-                _light.SetActive(false); 
+            if (_spotLight != null)
+                _spotLight.SetActive(false);
         }
     }
 

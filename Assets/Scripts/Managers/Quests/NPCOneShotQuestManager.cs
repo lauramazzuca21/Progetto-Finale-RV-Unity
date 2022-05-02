@@ -37,8 +37,10 @@ public class NPCOneShotQuestManager : QuestManager
         if (_quests.AreQuestsComplete())
         {
             _isActive = false;
-            if (_light != null)
-                _light.SetActive(false);
+            if (_spotLight != null)
+                _spotLight.SetActive(false);
+            if (_completionPartycles != null)
+                _completionPartycles.SetActive(true);
             EventManager.FirePoints(CorrectPoints);
             EventManager.FireDisplayMessageOnPanel(BuildMessage(), 8);
             if(_reward != null)

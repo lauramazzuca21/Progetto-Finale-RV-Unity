@@ -36,13 +36,15 @@ public class RecyclableObject : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         TrashCan can = other.gameObject.GetComponent<TrashCan>();
-        if (can != null && can.TrashType.Contains(this.TrashType))
-        {
+
+        if (can == null)
+            return;
+
+        if (can.TrashType.Contains(this.TrashType))
             EventManager.FireCorrectRecycling(ID);
-        }
         else
-        {
             EventManager.FireWrongRecycling();
-        }
+
+        Destroy(this);
     }
 }

@@ -32,6 +32,11 @@ public class NPCContinuousQuestManager : QuestManager
 
                 if (_quests.AreQuestsComplete())
                 {
+                    if (_completionPartycles != null)
+                    {
+                        _completionPartycles.SetActive(false);
+                        _completionPartycles.SetActive(true);
+                    }
                     EventManager.FireDisplayMessageOnPanel(BuildMessage(), 12);
                     EventManager.FirePoints(CorrectPoints);
                 }
@@ -40,7 +45,6 @@ public class NPCContinuousQuestManager : QuestManager
 
         UpdateScore();
     }
-
     private Classes.Message BuildMessage()
     {
         Classes.Message m = new Classes.Message();

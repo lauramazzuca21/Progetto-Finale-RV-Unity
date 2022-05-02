@@ -169,7 +169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f3bfeb7d40fb346aa8920f3766eb4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _titleLabel: {fileID: 0}
+  _panel: {fileID: 0}
+  _player: {fileID: 0}
+  _titlePanel: {fileID: 0}
+  _messagePanel: {fileID: 0}
   _messageLabel: {fileID: 0}
   _scoreLabel: {fileID: 0}
-  _panel: {fileID: 0}

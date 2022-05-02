@@ -11,7 +11,9 @@ public abstract class QuestManager : MonoBehaviour
     [SerializeField]
     protected GameObject _reward;
     [SerializeField]
-    protected GameObject _light;
+    protected GameObject _spotLight;
+    [SerializeField]
+    protected GameObject _completionPartycles;
     //"Select an object in the Quest Objects list and its respective quantity in Quest Quantities.They will be matched by position.";
     [SerializeField]
     protected QuestList _quests = new QuestList();
@@ -20,7 +22,7 @@ public abstract class QuestManager : MonoBehaviour
     protected int WrongPoints { get { return _wrongPoints; } set { _wrongPoints = value; } }
 
     protected void UpdateScore()
-    {
+    { 
         string str = "";
         foreach (Classes.Quest q in _quests.List) 
         {
@@ -30,5 +32,10 @@ public abstract class QuestManager : MonoBehaviour
             str += objectType + " " + trashType + ":\t" + q.CurrentQuantity + "/" + q.Quantity + "\n";
         }
         _score.text = str;
+    }
+
+    protected void OnWin()
+    {
+
     }
 }
