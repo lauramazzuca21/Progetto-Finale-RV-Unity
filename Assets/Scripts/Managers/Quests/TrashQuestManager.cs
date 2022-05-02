@@ -24,14 +24,14 @@ public class TrashQuestManager : QuestManager
             //every time the player completes a quest the mayor sends the message to congratulate and gets 300 pts
             if (q.IsComplete())
             {
-                EventManager.FireDisplayMessage(BuildMessage(q), 6);
+                EventManager.FireDisplayMessageOnPanel(BuildMessage(q), 6);
                 EventManager.FirePoints(_finalScore);
             }
         }
 
         if(_quests.AreQuestsComplete())
         {
-            EventManager.FireDisplayMessage(BuildMessage(null), 15);
+            EventManager.FireDisplayMessageOnPanel(BuildMessage(null), 15);
             if(_reward != null)
                 _reward.SetActive(true);
             if (_light != null)

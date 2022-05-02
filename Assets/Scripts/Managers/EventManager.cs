@@ -18,8 +18,11 @@ public class EventManager : MonoBehaviour
     public delegate void ReceiveWrongRecycling();
     public static event ReceiveWrongRecycling WrongRecycling;
 
-    public delegate void ReceiveDisplayMessage(Classes.Message msg, int lastInSec);
+    public delegate void ReceiveDisplayMessage(string msg);
     public static event ReceiveDisplayMessage DisplayMessage;
+
+    public delegate void ReceiveDisplayMessageOnPanel(Classes.Message msg, int lastInSec);
+    public static event ReceiveDisplayMessageOnPanel DisplayMessageOnPanel;
 
 
     internal static void FirePoints(int pts)
@@ -47,8 +50,13 @@ public class EventManager : MonoBehaviour
         WrongRecycling?.Invoke();
     }
 
-    public static void FireDisplayMessage(Classes.Message msg, int lastInSec)
+    public static void FireDisplayMessage(string msg)
     {
-        DisplayMessage?.Invoke(msg, lastInSec);
+        DisplayMessage?.Invoke(msg);
+    }
+
+    public static void FireDisplayMessageOnPanel(Classes.Message msg, int lastInSec)
+    {
+        DisplayMessageOnPanel?.Invoke(msg, lastInSec);
     }
 }

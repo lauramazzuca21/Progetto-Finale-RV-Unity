@@ -32,7 +32,7 @@ public class NPCContinuousQuestManager : QuestManager
 
                 if (_quests.AreQuestsComplete())
                 {
-                    EventManager.FireDisplayMessage(BuildMessage(), 12);
+                    EventManager.FireDisplayMessageOnPanel(BuildMessage(), 12);
                     EventManager.FirePoints(CorrectPoints);
                 }
             } while (used > 0);

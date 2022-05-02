@@ -40,7 +40,7 @@ public class NPCOneShotQuestManager : QuestManager
             if (_light != null)
                 _light.SetActive(false);
             EventManager.FirePoints(CorrectPoints);
-            EventManager.FireDisplayMessage(BuildMessage(), 8);
+            EventManager.FireDisplayMessageOnPanel(BuildMessage(), 8);
             if(_reward != null)
                 StartCoroutine(ActivateReward());
         }

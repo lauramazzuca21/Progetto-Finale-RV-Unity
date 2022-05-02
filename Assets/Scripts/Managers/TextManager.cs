@@ -6,13 +6,19 @@ using UnityEngine;
 public class TextManager : MonoBehaviour
 {
     [SerializeField]
-    private TMPro.TextMeshPro _titleLabel;
+    private GameObject _panel;
+    [SerializeField]
+    private GameObject _player;
+    [SerializeField]
+    private TMPro.TextMeshPro _titlePanel;
+    [SerializeField]
+    private TMPro.TextMeshPro _messagePanel;
     [SerializeField]
     private TMPro.TextMeshPro _messageLabel;
     [SerializeField]
     private TMPro.TextMeshPro _scoreLabel;
-    [SerializeField]
-    private GameObject _panel;
+
+    Vector3 offsetVector = new Vector3(0, 1.3f, 1.45f);
 
     private int points = 0;
     private List<TMPro.TextMeshPro> _totalScoreLabels = new List<TMPro.TextMeshPro>();
@@ -26,19 +32,23 @@ public class TextManager : MonoBehaviour
                 _totalScoreLabels.Add(g.GetComponent<TMPro.TextMeshPro>());
             ++i;
         }
-
-        UnityEngine.Debug.Log("Found " + i + "objects of type.");
     }
     // Start is called before the first frame update
     void Start()
     {
         EventManager.Points += UpdateScore;
         EventManager.DisplayMessage += DisplayMessage;
+        EventManager.DisplayMessageOnPanel += DisplayMessageOnPanel;
 
         _panel.SetActive(false);
     }
 
-    private void DisplayMessage(Classes.Message msg, int lastInSec)
+    private void DisplayMessage(string msg)
+    {
+        _messageLabel.text = msg;
+    }
+
+    private void DisplayMessageOnPanel(Classes.Message msg, int lastInSec)
     {
         if (_panel.activeSelf)//if the panel is active it means that a message is already being shown so we need to enqueue the incoming message
         {
@@ -89,8 +99,10 @@ public class TextManager : MonoBehaviour
 
     private void ShowPanel(Classes.Message msg, int lastInSec)
     {
-        _titleLabel.text = msg.title;
-        _messageLabel.text = msg.message;
+        _panel.transform.position = _player.transform.position + offsetVector;
+        _panel.transform.rotation = _player.transform.rotation;
+        _titlePanel.text = msg.title;
+        _messagePanel.text = msg.message;
         _ = StartCoroutine(ClearPanel(lastInSec));
     }
 }
