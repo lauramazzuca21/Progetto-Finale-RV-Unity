@@ -307,10 +307,6 @@ MonoBehaviour:
         objectType: 9
       _quantity: 2
     - _objID:
-        trashType: 3
-        objectType: 10
-      _quantity: 2
-    - _objID:
         trashType: 4
         objectType: 3
       _quantity: 3
@@ -336,7 +332,7 @@ MonoBehaviour:
       _quantity: 1
     - _objID:
         trashType: 5
-        objectType: 22
+        objectType: 19
       _quantity: 1
     - _objID:
         trashType: 5
