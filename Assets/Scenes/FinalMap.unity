@@ -58362,14 +58362,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1802218534}
     m_Modifications:
-    - target: {fileID: 2542110594196534014, guid: 619a9cf85dfbf4f3e91dd37e29dd5780, type: 3}
-      propertyPath: m_Size.y
-      value: 0.0007
-      objectReference: {fileID: 0}
-    - target: {fileID: 2542110594196534014, guid: 619a9cf85dfbf4f3e91dd37e29dd5780, type: 3}
-      propertyPath: m_Center.y
-      value: 0.0001
-      objectReference: {fileID: 0}
     - target: {fileID: 4178430268208896052, guid: 619a9cf85dfbf4f3e91dd37e29dd5780, type: 3}
       propertyPath: m_Name
       value: InteractableObj
@@ -58417,10 +58409,6 @@ PrefabInstance:
     - target: {fileID: 4178430268208896053, guid: 619a9cf85dfbf4f3e91dd37e29dd5780, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576508513443842645, guid: 619a9cf85dfbf4f3e91dd37e29dd5780, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.064
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 619a9cf85dfbf4f3e91dd37e29dd5780, type: 3}
