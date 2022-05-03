@@ -89,7 +89,7 @@ namespace Valve.VR.InteractionSystem
 			if ( Input.GetMouseButton( 1 ) /* right mouse */)
 			{
 				Vector3 offset = mousePosition - startMousePosition;
-				transform.localEulerAngles = startEulerAngles + new Vector3( -offset.y * 360.0f / Screen.height, offset.x * 360.0f / Screen.width, 0.0f );
+				transform.localEulerAngles = startEulerAngles + new Vector3( -offset.y * 360.0f / Screen.height, 0.0f, 0.0f );
 				player.transform.localEulerAngles = playerStartEularAngles + new Vector3(0.0f, offset.x * 360.0f / Screen.width, 0.0f); ;
 			}
 		}
