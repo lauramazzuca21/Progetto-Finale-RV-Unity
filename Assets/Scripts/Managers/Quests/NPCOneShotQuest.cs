@@ -59,7 +59,10 @@ public class NPCOneShotQuest : QuestManager
     {
         Classes.Message m = new Classes.Message();
         Constants.OneShotDictionary.TryGetValue(_npc, out m.title);
-        m.message = "¡Gracias! Has sido de gran ayuda. Te dejé un regalo sobre el estanteria de trofeos en la plaza principal.";
+        if(Enums.OneShotQuestNPCs.COSPLAYER != this._npc)
+            m.message = "¡Gracias! Has sido de gran ayuda. Te dejé un regalo sobre el estanteria de trofeos en la plaza principal.";
+        else
+            m.message = "¡Gracias! Has sido de gran ayuda. Por fin he conseguido terminar mi disfraz.";
 
         return m;
     }

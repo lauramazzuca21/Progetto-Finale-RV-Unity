@@ -19,7 +19,7 @@ public class NPCCosplayer : MonoBehaviour
 
     IEnumerator StartAnimation()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(1.0f);
         GetComponent<Animator>().enabled = true;
         _charachterMesh.SetActive(true);
         StopAllCoroutines();

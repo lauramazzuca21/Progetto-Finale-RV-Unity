@@ -70,7 +70,7 @@ public class Inventory : MonoBehaviour
     {
         if (hand.noSteamVRFallbackCamera != null)
         {
-            return Input.GetKey(KeyCode.J);
+            return Input.GetKey(KeyCode.Y);
         }
         else
         {
