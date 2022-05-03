@@ -72,12 +72,12 @@ public class TextManager : MonoBehaviour
         if (pts >= 0)
         {
             _pointsLabel.text = "+" + pts.ToString();
-            _pointsLabel.color = new Color(13, 159, 4);
+            _pointsLabel.color = new Color(13.0f / 255.0f, 159.0f / 255.0f, 4.0f / 255.0f, 1.0f);
         }
         else
         {
             _pointsLabel.text = pts.ToString();
-            _pointsLabel.color = new Color(159, 7, 4);
+            _pointsLabel.color = new Color(159.0f / 255.0f, 7.0f / 255.0f, 4 / 255.0f, 1.0f);
         }
 
         _score += pts;
@@ -98,6 +98,7 @@ public class TextManager : MonoBehaviour
     {
         yield return new WaitForSeconds(seconds);
         label.text = "";
+        yield return new WaitForSeconds(1);
         finalize?.Invoke();
     }
 

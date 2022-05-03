@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 800695787}
   - component: {fileID: 800695786}
   m_Layer: 3
-  m_Name: Score
+  m_Name: Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1903,10 +1903,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762115976805}
     m_Modifications:
-    - target: {fileID: 655570667330275287, guid: cb510a7ddeaeab2408e7f64422fe8acd, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1532620873698166136, guid: cb510a7ddeaeab2408e7f64422fe8acd, type: 3}
       propertyPath: m_Name
       value: TrashCanOrganic
@@ -2946,10 +2942,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrashCanGlass
       objectReference: {fileID: 0}
-    - target: {fileID: 655570667378660132, guid: 0c73e7f0da24978439f48f033e813550, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 666587031690909011, guid: 0c73e7f0da24978439f48f033e813550, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2994,6 +2986,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4013731926845125167, guid: 0c73e7f0da24978439f48f033e813550, type: 3}
+      propertyPath: _wrongPoints
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013731926845125167, guid: 0c73e7f0da24978439f48f033e813550, type: 3}
+      propertyPath: _correctPoints
+      value: 150
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c73e7f0da24978439f48f033e813550, type: 3}
 --- !u!4 &2263937939904674964 stripped
@@ -3008,10 +3008,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762115976805}
     m_Modifications:
-    - target: {fileID: 655570665856619068, guid: df694d8a89a197044ab06989c57a367b, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3944973236105154648, guid: df694d8a89a197044ab06989c57a367b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3055,6 +3051,14 @@ PrefabInstance:
     - target: {fileID: 3944973236105154648, guid: df694d8a89a197044ab06989c57a367b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013731925296870199, guid: df694d8a89a197044ab06989c57a367b, type: 3}
+      propertyPath: _wrongPoints
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013731925296870199, guid: df694d8a89a197044ab06989c57a367b, type: 3}
+      propertyPath: _correctPoints
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4464348081655696098, guid: df694d8a89a197044ab06989c57a367b, type: 3}
       propertyPath: m_Name
@@ -5777,9 +5781,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762115976805}
     m_Modifications:
-    - target: {fileID: 655570666494397393, guid: 924e68c3f5e4afd489f4765288b16f41, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
+    - target: {fileID: 4013731925665163994, guid: 924e68c3f5e4afd489f4765288b16f41, type: 3}
+      propertyPath: _wrongPoints
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013731925665163994, guid: 924e68c3f5e4afd489f4765288b16f41, type: 3}
+      propertyPath: _correctPoints
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 6015961639415954066, guid: 924e68c3f5e4afd489f4765288b16f41, type: 3}
       propertyPath: m_RootOrder
@@ -6365,17 +6373,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 536544597}
     - target: {fileID: 1401048418, guid: 364a8c55835c3cc46b0a440af1fa6c3c, type: 3}
-      propertyPath: _player
-      value: 
-      objectReference: {fileID: 1317306781}
-    - target: {fileID: 1401048418, guid: 364a8c55835c3cc46b0a440af1fa6c3c, type: 3}
-      propertyPath: _scoreLabel
-      value: 
-      objectReference: {fileID: 800695786}
-    - target: {fileID: 1401048418, guid: 364a8c55835c3cc46b0a440af1fa6c3c, type: 3}
       propertyPath: _titlePanel
       value: 
       objectReference: {fileID: 880769173}
+    - target: {fileID: 1401048418, guid: 364a8c55835c3cc46b0a440af1fa6c3c, type: 3}
+      propertyPath: _pointsLabel
+      value: 
+      objectReference: {fileID: 800695786}
     - target: {fileID: 1401048418, guid: 364a8c55835c3cc46b0a440af1fa6c3c, type: 3}
       propertyPath: _messageLabel
       value: 
@@ -7341,10 +7345,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
-    - target: {fileID: 885336050519882367, guid: 69ae1085a22d04f5d8f8f565cca6f02f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: 69ae1085a22d04f5d8f8f565cca6f02f, type: 3}
       propertyPath: m_Name
       value: FabricsTinCan (1)
@@ -7552,16 +7552,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 8576338762115976805}
     m_Modifications:
     - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _wrongPoints
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _correctPoints
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
       propertyPath: _quests._questList.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
       propertyPath: _quests._questList.Array.data[0]._objID.trashType
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2749166398889578119, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7002649345632406608, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
       propertyPath: m_RootOrder
@@ -8792,10 +8796,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5091390602524045441, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5735438917135630167, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
       propertyPath: m_Name
       value: Dumpster
@@ -9308,10 +9308,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959465816235025901, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5091390602524045441, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
-      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5735438917135630167, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
@@ -9842,10 +9838,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5091390602524045441, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5735438917135630167, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
       propertyPath: m_Name
       value: Dumpster (4)
@@ -10208,9 +10200,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762115976805}
     m_Modifications:
-    - target: {fileID: 2749166398889578119, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _wrongPoints
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _correctPoints
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7002649345632406608, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
       propertyPath: m_RootOrder
@@ -10496,10 +10492,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
-    - target: {fileID: 885336050519882367, guid: 69ae1085a22d04f5d8f8f565cca6f02f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: 69ae1085a22d04f5d8f8f565cca6f02f, type: 3}
       propertyPath: m_Name
       value: FabricsCan
@@ -13079,10 +13071,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
-    - target: {fileID: 2580503895800010694, guid: 387359450ed41ec439ee81d670b83e17, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7000359893317733030, guid: 387359450ed41ec439ee81d670b83e17, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -13211,10 +13199,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
-    - target: {fileID: 885336050519882367, guid: ed0eebced9bdb49a6a4ddef3dc5bec3e, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: ed0eebced9bdb49a6a4ddef3dc5bec3e, type: 3}
       propertyPath: m_Name
       value: OrganicCan
@@ -19636,10 +19620,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8731648414237634452, guid: e13e8435f86bbcc47aecf03a4969beb6, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e13e8435f86bbcc47aecf03a4969beb6, type: 3}
 --- !u!4 &8576338761912703678 stripped
@@ -20151,10 +20131,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
-    - target: {fileID: 885336050519882367, guid: ed0eebced9bdb49a6a4ddef3dc5bec3e, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: ed0eebced9bdb49a6a4ddef3dc5bec3e, type: 3}
       propertyPath: m_Name
       value: OrganicTinCan (2)
@@ -23160,10 +23136,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959465816235025901, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5091390602524045441, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
-      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5735438917135630167, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
@@ -27680,10 +27652,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
-    - target: {fileID: 885336050519882367, guid: c8a7c69bc7993df44bd7a79f82d2c5f0, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: c8a7c69bc7993df44bd7a79f82d2c5f0, type: 3}
       propertyPath: m_Name
       value: PlasticTinCan Variant
@@ -28150,10 +28118,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
-    - target: {fileID: 2580503895800010694, guid: 387359450ed41ec439ee81d670b83e17, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7000359893317733030, guid: 387359450ed41ec439ee81d670b83e17, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -29370,6 +29334,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 8576338762115976805}
     m_Modifications:
     - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _wrongPoints
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _correctPoints
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
       propertyPath: _quests._questList.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -29380,10 +29352,6 @@ PrefabInstance:
     - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
       propertyPath: _quests._questList.Array.data[0]._objID.objectType
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2749166398889578119, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7002649345632406608, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
       propertyPath: m_RootOrder
@@ -30225,10 +30193,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
-    - target: {fileID: 885336050519882367, guid: c8a7c69bc7993df44bd7a79f82d2c5f0, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: c8a7c69bc7993df44bd7a79f82d2c5f0, type: 3}
       propertyPath: m_Name
       value: PlasticTinCan Variant (1)
@@ -30931,16 +30895,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 8576338762115976805}
     m_Modifications:
     - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _wrongPoints
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _correctPoints
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
       propertyPath: _quests._questList.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
       propertyPath: _quests._questList.Array.data[0]._objID.trashType
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2749166398889578119, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7002649345632406608, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
       propertyPath: m_RootOrder
@@ -32190,10 +32158,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
-    - target: {fileID: 885336050519882367, guid: c8a7c69bc7993df44bd7a79f82d2c5f0, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: c8a7c69bc7993df44bd7a79f82d2c5f0, type: 3}
       propertyPath: m_Name
       value: PlasticTinCan Variant (2)
@@ -33978,10 +33942,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
-    - target: {fileID: 885336050519882367, guid: 69ae1085a22d04f5d8f8f565cca6f02f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: 69ae1085a22d04f5d8f8f565cca6f02f, type: 3}
       propertyPath: m_Name
       value: FabricsTinCan (2)
@@ -35121,10 +35081,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959465816235025901, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5091390602524045441, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
-      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5735438917135630167, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
@@ -36507,10 +36463,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8731648414237634452, guid: e13e8435f86bbcc47aecf03a4969beb6, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e13e8435f86bbcc47aecf03a4969beb6, type: 3}
 --- !u!4 &8576338762667367132 stripped
@@ -37055,10 +37007,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
-    - target: {fileID: 2580503895800010694, guid: 387359450ed41ec439ee81d670b83e17, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7000359893317733030, guid: 387359450ed41ec439ee81d670b83e17, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -51218,10 +51166,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8731648414237634452, guid: e13e8435f86bbcc47aecf03a4969beb6, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e13e8435f86bbcc47aecf03a4969beb6, type: 3}
 --- !u!4 &8576338763354274165 stripped
@@ -52184,10 +52128,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
-    - target: {fileID: 885336050519882367, guid: ed0eebced9bdb49a6a4ddef3dc5bec3e, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: ed0eebced9bdb49a6a4ddef3dc5bec3e, type: 3}
       propertyPath: m_Name
       value: OrganicTinCan (1)

@@ -170,8 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _player: {fileID: 0}
   _titlePanel: {fileID: 0}
   _messagePanel: {fileID: 0}
   _messageLabel: {fileID: 0}
-  _scoreLabel: {fileID: 0}
+  _pointsLabel: {fileID: 0}
