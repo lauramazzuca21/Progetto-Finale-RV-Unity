@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 //Player quests
-public class TrashQuestManager : QuestManager
+public class MayorQuest : QuestManager
 {
     private const int _finalScore = 300;
     void Start()
@@ -53,7 +53,7 @@ public class TrashQuestManager : QuestManager
 
         Constants.TrashDictionary.TryGetValue(q.ID.trashType, out string trashType);
         Constants.ObjectDictionary.TryGetValue(q.ID.objectType, out string objectType);
-        m.message = "Bravo! Reciclaste " + q.CurrentQuantity + " " + trashType + " " + objectType;
+        m.message = "Bravo! Reciclaste " + q.CurrentQuantity + " " + objectType + " " + trashType;
 
         return m;
     }

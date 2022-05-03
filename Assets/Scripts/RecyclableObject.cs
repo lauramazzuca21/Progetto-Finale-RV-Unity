@@ -32,19 +32,4 @@ public class RecyclableObject : MonoBehaviour
     public Enums.TrashType TrashType { get { return _id.trashType; } set { _id.trashType = value; } }
     public Enums.ObjectType ObjectType { get { return _id.objectType; } set { _id.objectType = value; } }
     public ObjID ID { get { return _id; } private set { _id = value; } }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        TrashCan can = other.gameObject.GetComponent<TrashCan>();
-
-        if (can == null)
-            return;
-
-        if (can.TrashType.Contains(this.TrashType))
-            EventManager.FireCorrectRecycling(ID);
-        else
-            EventManager.FireWrongRecycling();
-
-        Destroy(this);
-    }
 }

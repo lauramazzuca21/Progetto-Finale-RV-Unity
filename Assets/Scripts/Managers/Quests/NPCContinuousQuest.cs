@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCContinuousQuestManager : QuestManager
+public class NPCContinuousQuest : QuestManager
 {
     [SerializeField]
     private Enums.ContinuousQuestNPCs _npc;

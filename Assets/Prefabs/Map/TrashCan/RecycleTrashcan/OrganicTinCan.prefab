@@ -68,6 +68,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 822da3257f938974e95079daf2b5681f, type: 2}
     - target: {fileID: 4950223090845811919, guid: 9eea5c379c9840f4fbaf260d25b970c9, type: 3}
+      propertyPath: _wrongPoints
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950223090845811919, guid: 9eea5c379c9840f4fbaf260d25b970c9, type: 3}
+      propertyPath: _correctPoints
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950223090845811919, guid: 9eea5c379c9840f4fbaf260d25b970c9, type: 3}
       propertyPath: _trashType.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -77,6 +85,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4950223090845811919, guid: 9eea5c379c9840f4fbaf260d25b970c9, type: 3}
       propertyPath: _trashType.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950223090845811919, guid: 9eea5c379c9840f4fbaf260d25b970c9, type: 3}
+      propertyPath: _quests._questList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950223090845811919, guid: 9eea5c379c9840f4fbaf260d25b970c9, type: 3}
+      propertyPath: _quests._questList.Array.data[0]._objID.trashType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950223090845811919, guid: 9eea5c379c9840f4fbaf260d25b970c9, type: 3}
+      propertyPath: _quests._questList.Array.data[0]._objID.objectType
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6344617380852833179, guid: 9eea5c379c9840f4fbaf260d25b970c9, type: 3}

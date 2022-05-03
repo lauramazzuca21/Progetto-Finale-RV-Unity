@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 536544601}
   - component: {fileID: 536544600}
   - component: {fileID: 536544599}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,6 +443,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536544597}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &664116213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0a93638dcdcf3f343a775ec91da1710f, type: 3}
+  m_PrefabInstance: {fileID: 8576338762844664908}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &718606667
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,7 +459,7 @@ GameObject:
   - component: {fileID: 718606668}
   - component: {fileID: 718606670}
   - component: {fileID: 718606669}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -625,7 +630,7 @@ GameObject:
   - component: {fileID: 800695785}
   - component: {fileID: 800695787}
   - component: {fileID: 800695786}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -796,7 +801,7 @@ GameObject:
   - component: {fileID: 880769172}
   - component: {fileID: 880769174}
   - component: {fileID: 880769173}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: P_Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1215,7 +1220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.1
+      value: 19.9
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1223,7 +1228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.3
+      value: -32
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1481,7 +1486,7 @@ GameObject:
   - component: {fileID: 1922060813}
   - component: {fileID: 1922060815}
   - component: {fileID: 1922060814}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: P_Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1898,6 +1903,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762115976805}
     m_Modifications:
+    - target: {fileID: 655570667330275287, guid: cb510a7ddeaeab2408e7f64422fe8acd, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1532620873698166136, guid: cb510a7ddeaeab2408e7f64422fe8acd, type: 3}
       propertyPath: m_Name
       value: TrashCanOrganic
@@ -2937,6 +2946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrashCanGlass
       objectReference: {fileID: 0}
+    - target: {fileID: 655570667378660132, guid: 0c73e7f0da24978439f48f033e813550, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 666587031690909011, guid: 0c73e7f0da24978439f48f033e813550, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2995,6 +3008,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762115976805}
     m_Modifications:
+    - target: {fileID: 655570665856619068, guid: df694d8a89a197044ab06989c57a367b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3944973236105154648, guid: df694d8a89a197044ab06989c57a367b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5261,22 +5278,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762610460733}
     m_Modifications:
-    - target: {fileID: 592416461919311318, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 592416462215720676, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 592416462692349426, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 592416462732637473, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 1152982949, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
+      propertyPath: _reward
+      value: 
+      objectReference: {fileID: 664116213}
     - target: {fileID: 4710112805172465797, guid: 68e14fb5ae58a9b498c05e3b4269c99d, type: 3}
       propertyPath: _reward
       value: 
@@ -5772,6 +5777,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762115976805}
     m_Modifications:
+    - target: {fileID: 655570666494397393, guid: 924e68c3f5e4afd489f4765288b16f41, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6015961639415954066, guid: 924e68c3f5e4afd489f4765288b16f41, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7332,6 +7341,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
+    - target: {fileID: 885336050519882367, guid: 69ae1085a22d04f5d8f8f565cca6f02f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: 69ae1085a22d04f5d8f8f565cca6f02f, type: 3}
       propertyPath: m_Name
       value: FabricsTinCan (1)
@@ -7538,6 +7551,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762115976805}
     m_Modifications:
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _quests._questList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _quests._questList.Array.data[0]._objID.trashType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749166398889578119, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7002649345632406608, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -8767,6 +8792,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5091390602524045441, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5735438917135630167, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
       propertyPath: m_Name
       value: Dumpster
@@ -9279,6 +9308,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959465816235025901, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5091390602524045441, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5735438917135630167, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
@@ -9809,6 +9842,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5091390602524045441, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5735438917135630167, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
       propertyPath: m_Name
       value: Dumpster (4)
@@ -10090,7 +10127,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8576338761527507386}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 0.1, z: 15}
@@ -10152,7 +10189,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e88d77d51ba14a4cae15e0c10e0e238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trashType: 06000000
+  _correctPoints: 150
+  _wrongPoints: -50
+  _score: {fileID: 0}
+  _reward: {fileID: 0}
+  _spotLight: {fileID: 0}
+  _completionPartycles: {fileID: 0}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 6
+        objectType: 1
+      _quantity: 0
 --- !u!1001 &8576338761527978788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10160,6 +10208,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762115976805}
     m_Modifications:
+    - target: {fileID: 2749166398889578119, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7002649345632406608, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -10444,6 +10496,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
+    - target: {fileID: 885336050519882367, guid: 69ae1085a22d04f5d8f8f565cca6f02f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: 69ae1085a22d04f5d8f8f565cca6f02f, type: 3}
       propertyPath: m_Name
       value: FabricsCan
@@ -13023,6 +13079,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
+    - target: {fileID: 2580503895800010694, guid: 387359450ed41ec439ee81d670b83e17, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7000359893317733030, guid: 387359450ed41ec439ee81d670b83e17, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -13151,6 +13211,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
+    - target: {fileID: 885336050519882367, guid: ed0eebced9bdb49a6a4ddef3dc5bec3e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: ed0eebced9bdb49a6a4ddef3dc5bec3e, type: 3}
       propertyPath: m_Name
       value: OrganicCan
@@ -14944,7 +15008,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e88d77d51ba14a4cae15e0c10e0e238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trashType: 08000000
+  _correctPoints: 150
+  _wrongPoints: -50
+  _score: {fileID: 0}
+  _reward: {fileID: 0}
+  _spotLight: {fileID: 0}
+  _completionPartycles: {fileID: 0}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 8
+        objectType: 1
+      _quantity: 0
 --- !u!65 &8576338761725704998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14953,7 +15028,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8576338761725704992}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 11, y: 0.1, z: 16}
@@ -19302,7 +19377,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8576338761911017922}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 18, y: 0.1, z: 8}
@@ -19354,7 +19429,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e88d77d51ba14a4cae15e0c10e0e238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trashType: 03000000
+  _correctPoints: 150
+  _wrongPoints: -50
+  _score: {fileID: 0}
+  _reward: {fileID: 0}
+  _spotLight: {fileID: 0}
+  _completionPartycles: {fileID: 0}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 3
+        objectType: 1
+      _quantity: 0
 --- !u!1001 &8576338761912259882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19548,6 +19634,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4306715975925838580, guid: e13e8435f86bbcc47aecf03a4969beb6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8731648414237634452, guid: e13e8435f86bbcc47aecf03a4969beb6, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -20061,6 +20151,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
+    - target: {fileID: 885336050519882367, guid: ed0eebced9bdb49a6a4ddef3dc5bec3e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: ed0eebced9bdb49a6a4ddef3dc5bec3e, type: 3}
       propertyPath: m_Name
       value: OrganicTinCan (2)
@@ -23066,6 +23160,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959465816235025901, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5091390602524045441, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5735438917135630167, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
@@ -27582,6 +27680,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
+    - target: {fileID: 885336050519882367, guid: c8a7c69bc7993df44bd7a79f82d2c5f0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: c8a7c69bc7993df44bd7a79f82d2c5f0, type: 3}
       propertyPath: m_Name
       value: PlasticTinCan Variant
@@ -28048,6 +28150,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
+    - target: {fileID: 2580503895800010694, guid: 387359450ed41ec439ee81d670b83e17, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7000359893317733030, guid: 387359450ed41ec439ee81d670b83e17, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -29263,6 +29369,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762115976805}
     m_Modifications:
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _quests._questList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _quests._questList.Array.data[0]._objID.trashType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _quests._questList.Array.data[0]._objID.objectType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749166398889578119, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7002649345632406608, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -30103,6 +30225,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
+    - target: {fileID: 885336050519882367, guid: c8a7c69bc7993df44bd7a79f82d2c5f0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: c8a7c69bc7993df44bd7a79f82d2c5f0, type: 3}
       propertyPath: m_Name
       value: PlasticTinCan Variant (1)
@@ -30804,6 +30930,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762115976805}
     m_Modifications:
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _quests._questList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769261138366361484, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: _quests._questList.Array.data[0]._objID.trashType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749166398889578119, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7002649345632406608, guid: bcbdad5f1e32cba4887555ae5cc94a26, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -32052,6 +32190,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
+    - target: {fileID: 885336050519882367, guid: c8a7c69bc7993df44bd7a79f82d2c5f0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: c8a7c69bc7993df44bd7a79f82d2c5f0, type: 3}
       propertyPath: m_Name
       value: PlasticTinCan Variant (2)
@@ -33506,7 +33648,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8576338762551999718}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 8, y: 0.1, z: 7}
@@ -33558,7 +33700,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e88d77d51ba14a4cae15e0c10e0e238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trashType: 07000000
+  _correctPoints: 150
+  _wrongPoints: -50
+  _score: {fileID: 0}
+  _reward: {fileID: 0}
+  _spotLight: {fileID: 0}
+  _completionPartycles: {fileID: 0}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 7
+        objectType: 1
+      _quantity: 0
 --- !u!65 &8576338762554294840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33825,6 +33978,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
+    - target: {fileID: 885336050519882367, guid: 69ae1085a22d04f5d8f8f565cca6f02f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: 69ae1085a22d04f5d8f8f565cca6f02f, type: 3}
       propertyPath: m_Name
       value: FabricsTinCan (2)
@@ -34964,6 +35121,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959465816235025901, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5091390602524045441, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5735438917135630167, guid: 1579b4045ab58704393ee4ea486f9784, type: 3}
@@ -36346,6 +36507,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8731648414237634452, guid: e13e8435f86bbcc47aecf03a4969beb6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e13e8435f86bbcc47aecf03a4969beb6, type: 3}
 --- !u!4 &8576338762667367132 stripped
@@ -36478,7 +36643,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e88d77d51ba14a4cae15e0c10e0e238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trashType: 00000000
+  _correctPoints: 150
+  _wrongPoints: -50
+  _score: {fileID: 0}
+  _reward: {fileID: 0}
+  _spotLight: {fileID: 0}
+  _completionPartycles: {fileID: 0}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 0
+        objectType: 1
+      _quantity: 0
 --- !u!65 &8576338762677228127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36487,7 +36663,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8576338762677228121}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 13, y: 0.1, z: 7}
@@ -36879,6 +37055,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
+    - target: {fileID: 2580503895800010694, guid: 387359450ed41ec439ee81d670b83e17, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7000359893317733030, guid: 387359450ed41ec439ee81d670b83e17, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -45767,7 +45947,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e88d77d51ba14a4cae15e0c10e0e238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trashType: 0100000004000000
+  _correctPoints: 150
+  _wrongPoints: -50
+  _score: {fileID: 0}
+  _reward: {fileID: 0}
+  _spotLight: {fileID: 0}
+  _completionPartycles: {fileID: 0}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 1
+        objectType: 1
+      _quantity: 0
+    - _objID:
+        trashType: 4
+        objectType: 1
+      _quantity: 0
 --- !u!65 &8576338763122252539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45776,7 +45971,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8576338763122252485}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 8, y: 0.1, z: 7}
@@ -46532,7 +46727,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e88d77d51ba14a4cae15e0c10e0e238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trashType: 05000000
+  _correctPoints: 150
+  _wrongPoints: -50
+  _score: {fileID: 0}
+  _reward: {fileID: 0}
+  _spotLight: {fileID: 0}
+  _completionPartycles: {fileID: 0}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 5
+        objectType: 1
+      _quantity: 0
 --- !u!65 &8576338763156290186
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46541,7 +46747,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8576338763156290196}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 12, y: 0.1, z: 6.5}
@@ -51012,6 +51218,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8731648414237634452, guid: e13e8435f86bbcc47aecf03a4969beb6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e13e8435f86bbcc47aecf03a4969beb6, type: 3}
 --- !u!4 &8576338763354274165 stripped
@@ -51974,6 +52184,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576338762077570573}
     m_Modifications:
+    - target: {fileID: 885336050519882367, guid: ed0eebced9bdb49a6a4ddef3dc5bec3e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5038125530765229477, guid: ed0eebced9bdb49a6a4ddef3dc5bec3e, type: 3}
       propertyPath: m_Name
       value: OrganicTinCan (1)

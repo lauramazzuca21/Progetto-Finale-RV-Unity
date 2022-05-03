@@ -25,7 +25,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e88d77d51ba14a4cae15e0c10e0e238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trashType: 03000000
+  _correctPoints: 0
+  _wrongPoints: 0
+  _score: {fileID: 0}
+  _reward: {fileID: 0}
+  _spotLight: {fileID: 0}
+  _completionPartycles: {fileID: 0}
+  _quests:
+    _questList:
+    - _objID:
+        trashType: 1
+        objectType: 1
+      _quantity: 0
+    - _objID:
+        trashType: 4
+        objectType: 1
+      _quantity: 0
 --- !u!64 &1208830406632615811
 MeshCollider:
   m_ObjectHideFlags: 0

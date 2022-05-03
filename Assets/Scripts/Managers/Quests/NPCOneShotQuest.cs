@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCOneShotQuestManager : QuestManager
+public class NPCOneShotQuest : QuestManager
 {
     [SerializeField]
     private Enums.OneShotQuestNPCs _npc;
