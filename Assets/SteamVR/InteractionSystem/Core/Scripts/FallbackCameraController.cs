@@ -18,7 +18,7 @@ namespace Valve.VR.InteractionSystem
 		public bool showInstructions = true;
 		public GameObject player;
 
-		private Vector3 startEulerAngles;
+		private Vector3 startEulerAngles, playerStartEularAngles;
 		private Vector3 startMousePosition;
 		private float realTime;
 
@@ -82,13 +82,15 @@ namespace Valve.VR.InteractionSystem
 			if ( Input.GetMouseButtonDown( 1 ) /* right mouse */)
 			{
 				startMousePosition = mousePosition;
-				startEulerAngles = player.transform.localEulerAngles; //transform.localEulerAngles;
+				startEulerAngles = transform.localEulerAngles;
+				playerStartEularAngles = player.transform.localEulerAngles; //transform.localEulerAngles;
 			}
 
 			if ( Input.GetMouseButton( 1 ) /* right mouse */)
 			{
 				Vector3 offset = mousePosition - startMousePosition;
-				player.transform.localEulerAngles/*transform.localEulerAngles*/ = startEulerAngles + new Vector3( -offset.y * 360.0f / Screen.height, offset.x * 360.0f / Screen.width, 0.0f );
+				transform.localEulerAngles = startEulerAngles + new Vector3( -offset.y * 360.0f / Screen.height, offset.x * 360.0f / Screen.width, 0.0f );
+				player.transform.localEulerAngles = playerStartEularAngles + new Vector3(0.0f, offset.x * 360.0f / Screen.width, 0.0f); ;
 			}
 		}
 

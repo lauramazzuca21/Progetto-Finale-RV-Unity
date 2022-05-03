@@ -37,20 +37,6 @@ MonoBehaviour:
         trashType: 3
         objectType: 1
       _quantity: 0
---- !u!64 &4609626169241940512
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556559813807475765}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5857343212921842139, guid: f12520598402c2240b4a17ed7cb81c7a, type: 3}
 --- !u!1001 &4644062295817570243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -143,10 +129,5 @@ PrefabInstance:
 --- !u!1 &147459847575687145 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4789833284930242602, guid: 67e11c6578d2834449ad62821a862243, type: 3}
-  m_PrefabInstance: {fileID: 4644062295817570243}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &556559813807475765 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5173028752921021430, guid: 67e11c6578d2834449ad62821a862243, type: 3}
   m_PrefabInstance: {fileID: 4644062295817570243}
   m_PrefabAsset: {fileID: 0}
