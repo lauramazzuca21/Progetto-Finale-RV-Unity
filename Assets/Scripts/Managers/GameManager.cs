@@ -8,16 +8,17 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _ = StartCoroutine(ActivateStartupObjects());
+    }
+
+    private IEnumerator ActivateStartupObjects()
+    {
+        yield return new WaitForSeconds(1);
+
         if (Application.isEditor)
             foreach (GameObject g in GameObject.FindGameObjectsWithTag("SteamVR"))
                 g.SetActive(true);
 
-        _ = StartCoroutine(ActivatePlayerInput());
-    }
-
-    private IEnumerator ActivatePlayerInput()
-    {
-        yield return new WaitForSeconds(1);
         Classes.Message msg1 = new Classes.Message();
         Classes.Message msg2 = new Classes.Message();
         Classes.Message msg3 = new Classes.Message();
