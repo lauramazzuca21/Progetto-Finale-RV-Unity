@@ -42,6 +42,7 @@ public class NPCOneShotQuest : QuestManager
             if (_completionPartycles != null)
                 _completionPartycles.SetActive(true);
             EventManager.FirePoints(CorrectPoints);
+            EventManager.FireQuestCompleted();
             EventManager.FireDisplayMessageOnPanel(BuildMessage(), 8);
             if(_reward != null)
                 StartCoroutine(ActivateReward());
@@ -60,7 +61,7 @@ public class NPCOneShotQuest : QuestManager
         Classes.Message m = new Classes.Message();
         Constants.OneShotDictionary.TryGetValue(_npc, out m.title);
         if(Enums.OneShotQuestNPCs.COSPLAYER != this._npc)
-            m.message = "¡Gracias! Has sido de gran ayuda. Te dejé un regalo sobre el estanteria de trofeos en la plaza principal.";
+            m.message = "¡Gracias! Has sido de gran ayuda. Te dejé un regalo sobre tu estanteria de trofeos en la plaza principal.";
         else
             m.message = "¡Gracias! Has sido de gran ayuda. Por fin he conseguido terminar mi disfraz.";
 

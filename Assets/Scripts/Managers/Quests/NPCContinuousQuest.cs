@@ -37,8 +37,10 @@ public class NPCContinuousQuest : QuestManager
                         _completionPartycles.SetActive(false);
                         _completionPartycles.SetActive(true);
                     }
-                    EventManager.FireDisplayMessageOnPanel(BuildMessage(), 12);
+                    EventManager.FireQuestCompleted();
+                    EventManager.FireDisplayMessageOnPanel(BuildMessage(), 10);
                     EventManager.FirePoints(CorrectPoints);
+                    _quests.Reset();
                 }
             } while (used > 0);
         }

@@ -13,6 +13,7 @@ public class SoundManager : MonoBehaviour
     {
         EventManager.CorrectRecycling += PlayCorrectRecycling;
         EventManager.WrongRecycling += PlayWrongRecycling;
+        EventManager.QuestCompleted += PlayQuestCompleted;
 
         audioSource = GetComponent<AudioSource>();
     }
@@ -21,6 +22,12 @@ public class SoundManager : MonoBehaviour
     {
         Play(Constants.Clips[Enums.AudioClips.CORRECT]);
     }
+
+    void PlayQuestCompleted()
+    {
+        Play(Constants.Clips[Enums.AudioClips.CORRECT]);
+    }
+
     void PlayWrongRecycling()
     {
         Play(Constants.Clips[Enums.AudioClips.WRONG]);

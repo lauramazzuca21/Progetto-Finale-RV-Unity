@@ -26189,11 +26189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5135605292968526813, guid: afdf3ee95a1d49c48bbcd5cba922a932, type: 3}
       propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5135605292968526813, guid: afdf3ee95a1d49c48bbcd5cba922a932, type: 3}
-      propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5135605292968526813, guid: afdf3ee95a1d49c48bbcd5cba922a932, type: 3}
       propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -29157,10 +29153,6 @@ PrefabInstance:
     - target: {fileID: 4441275512262022120, guid: afdf3ee95a1d49c48bbcd5cba922a932, type: 3}
       propertyPath: m_Name
       value: NikeAF1 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5135605292968526813, guid: afdf3ee95a1d49c48bbcd5cba922a932, type: 3}
-      propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.size
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5135605292968526813, guid: afdf3ee95a1d49c48bbcd5cba922a932, type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.size

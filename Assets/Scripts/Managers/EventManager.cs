@@ -18,6 +18,9 @@ public class EventManager : MonoBehaviour
     public delegate void ReceiveWrongRecycling();
     public static event ReceiveWrongRecycling WrongRecycling;
 
+    public delegate void ReceiveQuestCompleted();
+    public static event ReceiveQuestCompleted QuestCompleted;
+
     public delegate void ReceiveDisplayMessage(string msg);
     public static event ReceiveDisplayMessage DisplayMessage;
 
@@ -38,6 +41,11 @@ public class EventManager : MonoBehaviour
     internal static void FirePlayerInteraction(GameObject gameObject)
     {
         PlayerInteraction?.Invoke(gameObject);
+    }
+
+    internal static void FireQuestCompleted()
+    {
+        QuestCompleted?.Invoke();
     }
 
     internal static void FireCorrectRecycling(RecyclableObject.ObjID ID)

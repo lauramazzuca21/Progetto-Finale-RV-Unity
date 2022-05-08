@@ -68,7 +68,7 @@ MonoBehaviour:
   locked: 0
   markerActive: 1
   teleportType: 0
-  title: Alcadesa
+  title: Alcaldesa
   switchToScene: 
   titleVisibleColor: {r: 0.13885128, g: 0.6527193, b: 0.78677076, a: 0.5}
   titleHighlightedColor: {r: 0.45280647, g: 0.9191189, b: 0.45602244, a: 0.5}

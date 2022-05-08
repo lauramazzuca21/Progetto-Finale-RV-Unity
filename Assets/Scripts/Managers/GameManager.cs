@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator ActivateStartupObjects()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(10);
 
         if (Application.isEditor)
             foreach (GameObject g in GameObject.FindGameObjectsWithTag("SteamVR"))
@@ -22,14 +22,14 @@ public class GameManager : MonoBehaviour
         Classes.Message msg1 = new Classes.Message();
         Classes.Message msg2 = new Classes.Message();
         Classes.Message msg3 = new Classes.Message();
-        msg1.title = msg2.title = msg3.title = "ALCADESA";
+        msg1.title = msg2.title = msg3.title = "ALCALDESA";
         msg1.message = "¡Buenos días! Gracias por venir a nuestra ciudad, te estaba esperando.\nLos habitantes de este lugar necesitan tu ayuda para completar su trabajo.";
         msg2.message = "Esparcidos entre la basura hay unos cuantos objetos que tendrás que recoger, poner en tu inventario y llevárselos, verás que sabrán agradecértelo.";
         msg3.message = "Intenta también recoger y reciclar la mayor cantidad de basura posible de forma correcta, para que puedas contribuir a embellecer aún más esta ciudad.";
 
-        EventManager.FireDisplayMessageOnPanel(msg1, 4);
-        EventManager.FireDisplayMessageOnPanel(msg2, 4);
-        EventManager.FireDisplayMessageOnPanel(msg3, 4);
+        EventManager.FireDisplayMessageOnPanel(msg1, 5);
+        EventManager.FireDisplayMessageOnPanel(msg2, 5);
+        EventManager.FireDisplayMessageOnPanel(msg3, 5);
 
     }
 }
